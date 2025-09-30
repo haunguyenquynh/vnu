@@ -9,11 +9,64 @@ window.addEventListener("scroll", () => {
   headers.forEach((header) => {
     if (currentScroll > 150 && !header.classList.contains(toggleClass)) {
       header.classList.add(toggleClass);
-    } else if (
-      currentScroll <= 150 &&
-      header.classList.contains(toggleClass)
-    ) {
+    } else if (currentScroll <= 150 && header.classList.contains(toggleClass)) {
       header.classList.remove(toggleClass);
     }
   });
+});
+
+new Swiper(".mySwiper", {
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  slideToClickedSlide: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+new Swiper(".blog-slider", {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 16,
+  slideToClickedSlide: true,
+  breakpoints: {
+    1920: {
+      slidesPerView: 3,
+    },
+    1028: {
+      slidesPerView: 2,
+    },
+    480: {
+      slidesPerView: 1,
+    },
+  },
+});
+
+new Swiper(".logo-slider", {
+  loop: true,
+  slidesPerView: 7,
+  paginationClickable: true,
+  spaceBetween: 72,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  speed: 2000,
+  breakpoints: {
+    1920: {
+      slidesPerView: 7,
+      spaceBetween: 72,
+    },
+    1028: {
+      slidesPerView: 5,
+      spaceBetween: 32,
+    },
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
 });
