@@ -36,10 +36,10 @@ new Swiper(".blog-slider", {
     1920: {
       slidesPerView: 3,
     },
-    1028: {
+    1199: {
       slidesPerView: 2,
     },
-    480: {
+    667: {
       slidesPerView: 1,
     },
   },
@@ -60,11 +60,11 @@ new Swiper(".logo-slider", {
       slidesPerView: 7,
       spaceBetween: 72,
     },
-    1028: {
+    1199: {
       slidesPerView: 5,
       spaceBetween: 32,
     },
-    480: {
+    667: {
       slidesPerView: 3,
       spaceBetween: 20,
     },
