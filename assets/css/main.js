@@ -45,6 +45,24 @@ new Swiper(".blog-slider", {
   },
 });
 
+new Swiper(".blog-slider-3", {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 16,
+  slideToClickedSlide: true,
+  breakpoints: {
+    1920: {
+      slidesPerView: 3,
+    },
+    1199: {
+      slidesPerView: 2,
+    },
+    667: {
+      slidesPerView: 1,
+    },
+  },
+});
+
 new Swiper(".logo-slider", {
   loop: true,
   slidesPerView: 7,

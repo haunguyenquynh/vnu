@@ -17,10 +17,15 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Montserrat';
+    font-family: 'Be Vietnam Pro';
     font-weight: bold;
 }
-
+h1 {
+    font-size: 24px;
+    line-height: 160%;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
 input.form-control:focus {
     outline: none;
     box-shadow: none;
