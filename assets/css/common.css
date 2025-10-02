@@ -61,7 +61,7 @@ button:focus:not(:focus-visible) {
     box-shadow: none;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
 
     .container,
     .container-lg,

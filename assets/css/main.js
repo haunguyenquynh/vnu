@@ -50,6 +50,8 @@ new Swiper(".blog-slider-3", {
   slidesPerView: 3,
   spaceBetween: 16,
   slideToClickedSlide: true,
+  observer: true, 
+  observeParents: true,
   breakpoints: {
     1920: {
       slidesPerView: 3,
@@ -87,4 +89,22 @@ new Swiper(".logo-slider", {
       spaceBetween: 20,
     },
   },
+});
+
+const tabBtns = document.querySelectorAll(".tab-btn");
+const tabContents = document.querySelectorAll(".tab-content-hr");
+
+tabBtns.forEach(btn => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault(); // chặn nhảy trang
+
+    // toggle active button
+    tabBtns.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    // toggle active content
+    const targetId = btn.getAttribute("href").substring(1); // bỏ dấu #
+    tabContents.forEach(c => c.classList.remove("active"));
+    document.getElementById(targetId).classList.add("active");
+  });
 });

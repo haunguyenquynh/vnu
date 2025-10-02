@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <link href="./assets/css/common.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+    <title>Giới thiệu</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-container container">
+        <a class="logo-brand" href="./index.html"
+          ><img src="./assets/image/logo.png" alt="menu"
+        /></a>
+        <div class="header-container__content">
+          <div class="header-container__right">
+            <div class="d-flex gap-3 group-social">
+              <a href="#"><img src="./assets/icon/Facebook.svg" /></a>
+              <a href="#">
+                <svg
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
+                  <rect
+                    width="17.5"
+                    height="17.5"
+                    transform="translate(5.25 5.64032)"
+                    fill="currentColor"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.21875 7.60907H12.5869L14.2291 11.9403L12.4589 13.0191C13.064 14.1584 14.1595 15.3363 15.3246 15.9453L16.3997 14.1533L20.7812 15.8024V21.1716H20.1979C16.3815 21.1716 13.1282 19.8635 10.8275 17.5628C8.52685 15.2621 7.21875 12.0088 7.21875 8.1924V7.60907ZM8.39649 8.77574C8.52205 12.0595 9.70918 14.7946 11.6525 16.7379C13.5958 18.6811 16.3308 19.8683 19.6146 19.9938V16.6098L16.8995 15.588L15.8046 17.4128L15.3464 17.2352C13.5206 16.5276 11.8575 14.6667 11.1686 13.0194L10.9752 12.5571L12.7948 11.4482L11.7815 8.77574H8.39649Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a href="#"
+                ><svg
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
+                  <rect
+                    width="17.5"
+                    height="17.5"
+                    transform="translate(5.25 5.64032)"
+                    fill="currentColor"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.1471 8.70276H6.85547V20.0778H21.1471V8.70276ZM8.02214 10.4788V18.9111H19.9805V10.4787L14.0013 15.1292L8.02214 10.4788ZM18.8636 9.86943H9.139L14.0013 13.6512L18.8636 9.86943Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="d-flex gap-2">
+              <button class="btn" type="button">
+                <img src="./assets/image/flag.png" />
+              </button>
+              <button class="btn" type="button">
+                <img src="./assets/image/flags.png" />
+              </button>
+            </div>
+            <button
+              class="navbar-toggler p-0 border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbarDark"
+              aria-controls="offcanvasNavbarDark"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+          </div>
+          <form class="d-flex form-search">
+            <button class="btn btn-outline-success" type="submit">
+              <img src="./assets/icon/search.png" />
+            </button>
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Tìm kiếm tất cả"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbarDark"
+              aria-labelledby="offcanvasNavbarDarkLabel"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarMenu1"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Giới thiệu
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarMenu1">
+                    <li>
+                      <a class="link-item" href="./gioi-thieu.html">Giới thiệu chung</a>
+                    </li>
+                    <li>
+                      <a class="link-item" href="./gioi-thieu.html">Sứ mệnh tầm nhìn</a>
+                    </li>
+                    <li>
+                      <a class="link-item" href="./gioi-thieu.html">Cơ cấu tổ chức</a>
+                    </li>
+                    <li>
+                      <a class="link-item" href="./gioi-thieu.html">Hội đồng kiểm định</a>
+                    </li>
+                    <li>
+                      <a class="link-item" href="./gioi-thieu.html">Quy chế hoạt động</a>
+                    </li>
+                    <li>
+                      <a class="link-item" href="./gioi-thieu.html">Chiến lược phát triển</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./quy-trinh.html"> QUY TRÌNH KĐCLGD </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./ket-qua.html"> KẾT QUẢ KĐCLGD </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./dao-tao.html"> ĐÀO TẠO KĐV </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./tap-huan.html"> TẬP HUẤN ĐBCL </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./doi-tac.html"> HỢP TÁC </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./tai-lieu.html"> TÀI LIỆU </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./lien-he.html"> LIÊN HỆ </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <nav aria-label="breadcrumb" class="breadcrumb-content">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Giới thiệu</li>
+        </ol>
+      </div>
+    </nav>
+    <div class="single-blog container">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="introduce-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#introduce"
+            type="button"
+            role="tab"
+            aria-controls="introduce"
+            aria-selected="true"
+          >
+            <span class="icon-tab"
+              ><img src="./assets/icon/file-bookmark.svg"
+            /></span>
+
+            <span class="d-block">Giới thiệu <br />chung</span>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="mission-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#mission"
+            type="button"
+            role="tab"
+            aria-controls="mission"
+            aria-selected="false"
+          >
+            <span class="icon-tab"
+              ><img src="./assets/icon/lighting.svg"
+            /></span>
+
+            <span class="d-block">Sứ mệnh <br />Tầm nhìn</span>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="organizational-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#organizational"
+            type="button"
+            role="tab"
+            aria-controls="organizational"
+            aria-selected="false"
+          >
+            <span class="icon-tab"><img src="./assets/icon/node.svg" /></span>
+
+            <span class="d-block">Cơ cấu <br />tổ chức</span>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="hr-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#hr"
+            type="button"
+            role="tab"
+            aria-controls="hr"
+            aria-selected="false"
+          >
+            <span class="icon-tab"><img src="./assets/icon/dial.svg" /></span>
+
+            <span class="d-block">Tổ chức <br />nhân sự</span>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="regulation-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#regulation"
+            type="button"
+            role="tab"
+            aria-controls="regulation"
+            aria-selected="false"
+          >
+            <span class="icon-tab"
+              ><img src="./assets/icon/setting.svg"
+            /></span>
+
+            <span class="d-block">Quy chế <br />Hoạt động</span>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="strategy-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#strategy"
+            type="button"
+            role="tab"
+            aria-controls="strategy"
+            aria-selected="false"
+          >
+            <span class="icon-tab"
+              ><img src="./assets/icon/horizontal-right.svg"
+            /></span>
+
+            <span class="d-block">Chiến lược <br />Phát triển</span>
+          </button>
+        </li>
+        <div class="nav-link-page">
+          <a href="./cong-khai.html">
+            <span class="icon-tab1"
+              ><img src="./assets/icon/book-open.svg" width="56" height="56"
+            /></span>
+            <span class="d-block">Công khai</span>
+          </a>
+          <a href="./giay-phep.html" class="color-green">
+            <span class="icon-tab1"
+              ><img src="./assets/icon/content-file.svg" width="56" height="56"
+            /></span>
+            <span class="d-block">Giấy phép</span>
+          </a>
+        </div>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="introduce"
+          role="tabpanel"
+          aria-labelledby="introduce-tab"
+        >
+          <div class="single-blog__content">
+            <div class="single-blog__content--left">
+              <h2>GIỚI THIỆU CHUNG</h2>
+              <h3 class="introduce-text">Giới thiệu chung về VNU-CEA</h3>
+              <div class="detail">
+                <p>
+                  Là một đại học hàng đầu của đất nước có kinh nghiệm và thế
+                  mạnh trong lĩnh vực bảo đảm và kiểm định chất lượng giáo dục,
+                  năm 2013 Đại học Quốc gia Hà Nội (ĐHQGHN) được Bộ Giáo dục và
+                  Đào tạo (Bộ GDĐT) giao xây dựng đề án thành lập trung tâm kiểm
+                  định chất lượng giáo dục.
+                </p>
+                <img src="./assets/image/new1.jpg" width="100%" />
+                <p>
+                  lượng giáo dục - ĐHQGHN (Trung tâm) đánh dấu sự ra đời của một
+                  trung tâm kiểm định chất lượng giáo dục đầu tiên tại Việt Nam.
+                </p>
+                <p class="text-indent-2">
+                  Trung tâm là đơn vị sự nghiệp công lập có tư cách pháp nhân
+                  được giao chức năng kiểm định chất lượng giáo dục (KĐCLGD) đối
+                  với các CSGD ngoài ĐHQGHN, tư vấn đảm bảo và cải tiến chất
+                  lượng đồng thời tổ chức đào tạo và bồi dưỡng nghiệp vụ về kiểm
+                  định chất lượng giáo dục.
+                </p>
+                <p class="text-indent-2">
+                  Kể từ khi Bộ trưởng Bộ GDĐT có quyết định bổ nhiệm Giám đốc
+                  vào tháng 12 năm 2013 và cấp phép hoạt động vào tháng 11 năm
+                  2014, Trung tâm đã xây dựng, triển khai chiến lược phát triển
+                  và các kế hoạch trung hạn, hằng năm để thực hiện tốt sứ mạng
+                  của mình, góp phần đáng kể vào phát triển hệ thống KĐCLGD và
+                  xây dựng văn hóa chất lượng trong các CSGD đại học và trường
+                  cao đẳng tại Việt Nam.
+                </p>
+                <p class="text-indent-2">
+                  Sau 11 năm hoạt động, năm 2025 đã ghi nhận dấu mốc chuyển biến
+                  quan trọng về thể chế và tổ chức của Trung tâm theo cơ chế tự
+                  chủ toàn diện với sự công nhận Hội đồng quản lý bởi cơ quan có
+                  thẩm quyền . Với mô hình quản trị hiện đại, chuyên nghiệp và
+                  minh bạch, Trung tâm tiếp tục khẳng định vai trò trong hệ
+                  thống giáo dục đại học và đang hiện thực hóa tầm nhìn trở
+                  thành tổ chức kiểm định hàng đầu tại Việt Nam, có uy tín trong
+                  khu vực và quốc tế.
+                </p>
+                <p class="text-indent-2 mt-4">
+                  Những kết quả chủ yếu sau 10 năm xây dựng và phát triển
+                </p>
+                <p class="text-indent-2">
+                  Về xây dựng tổ chức, phát triển đội ngũ: Trung tâm có cơ cấu
+                  tổ chức được hoàn thiện gồm: Chi bộ, Hội đồng quản lý, Ban
+                  Giám đốc, Hội đồng Kiểm định chất lượng giáo dục, tổ chức Công
+                  đoàn, Đoàn thanh niên và các phòng chức năng. Để thực hiện
+                  đánh giá chất lượng, Trung tâm có đội ngũ cộng tác viên là các
+                  kiểm định viên và đánh giá viên làm việc toàn thời gian giàu
+                  kinh nghiệm và có trình độ cao để thực hiện các hoạt động
+                  KĐCLGD với trên 200 người, trong đó có 30 GS, 102 PGS.
+                </p>
+                <p class="text-indent-2">
+                  Về xây dựng và hoàn thiện hệ thống văn bản quản lý: Bên cạnh
+                  việc tuân thủ các văn bản quy định chung của Nhà nước, Bộ GDĐT
+                  và ĐHQGHN, Trung tâm đã xây dựng và ban hành đầy đủ hệ thống
+                  văn bản quản lý nội bộ và các quy trình, công cụ để quản lý
+                  trong các lĩnh vực hoạt động: đánh giá và công nhận chất lượng
+                  giáo dục; hợp tác phát triển; tổ chức cán bộ; thanh tra - pháp
+                  chế; hành chính; kế hoạch và tài chính; thi đua khen thưởng.
+                  Các văn bản của Trung tâm được định kỳ cập nhật, bổ sung theo
+                  các quy định hiện hành của pháp luật, của ĐHQGHN và phù hợp
+                  với thực tiễn.
+                </p>
+                <p class="text-indent-2">
+                  Về hoạt động KĐCLGD: Tính đến Tháng 5 năm 2025, Trung tâm đã
+                  hoàn thành thẩm định 123 báo cáo tự đánh giá (TĐG) cơ sở GDĐH,
+                  triển khai ĐGN cho 111 lượt cơ sở GDĐH và cấp Giấy chứng nhận
+                  KĐCLGD cho 107 lượt cơ sở GDĐH (47 cơ sở GDĐH đã đánh giá
+                  CK2), thẩm định 06 báo cáo TĐG và hoàn thánh đánh giá ngoài 06
+                  lượt Trường CĐSP, cấp Giấy chứng nhận KĐCLGD cho 04 lượt
+                  Trường CĐSP (trong đó 01 trường ở chu kỳ2); Đối với chương
+                  trình đào tạo (CTĐT), thẩm định 655 báo cáo TĐG các trình độ
+                  (03 Cao đẳng, 575 trình độ ĐH, 66 CTĐT trình độ ThS), triển
+                  khai đánh giá ngoài cho 626 lượt CTĐT và đã cấp Giấy chứng
+                  nhận KĐCLGD cho 602 CTĐT (03 trình độ CĐ, 539 CTĐT trình độ
+                  ĐH, 60 CTĐT trình độ ThS).
+                </p>
+                <p>
+                  Đào tạo, bồi dưỡng nâng cao năng lực đội ngũ: Trung tâm đã tổ
+                  chức và phối hợp tổ chức 46 Khoá đào tạo/bồi dưỡng nghiệp vụ
+                  KĐV với 2.103 học viên, trong đó 2.041 học viên đã được cấp
+                  chứng chỉ/chứng nhận hoàn thành chương trình bồi dưỡng (trong
+                  đó có 392 người được cấp thẻ KĐV). Trung tâm cũng đã tổ chức
+                  38 hội thảo, tập huấn, tọa đàm để nâng cao năng lực cho đội
+                  ngũ kiểm định viên, chuyên gia và đánh giá viên của Trung tâm
+                  thu hút sự tham gia của hơn 1.000 lượt người trên cả nước.
+                </p>
+                <img src="./assets/image/single-blog.jpg" width="100%" />
+                <p>Một số danh hiệu đã được ghi nhận, khen thưởng</p>
+                <p class="text-indent-2">
+                  Trung tâm đạt các danh hiệu như: Tập thể lao động xuất sắc
+                  trong nhiều năm; Cờ thi đua của ĐHQGHN trong các năm 2022,
+                  2023; Bằng khen của Giám đốc ĐHQGHN các năm 2019, 2023; Bằng
+                  khen của Bộ trưởng Bộ GDĐT về thành tích xuất sắc trong quá
+                  trình 15 năm xây dựng và phát triển hệ thống bảo đảm và
+                  KĐCLGD; Bằng khen Bộ trưởng Bộ GDĐT về thành tích xuất sắc
+                  trong xây dựng và phát triển Trung tâm vào năm 2023. Công đoàn
+                  Trung tâm được đánh giá là Công đoàn cơ sở vững mạnh, được
+                  nhận Bằng khen của Công đoàn Giáo dục Việt Nam năm 2023.
+                </p>
+              </div>
+            </div>
+            <div class="single-blog__content--right">
+              <h2>TIN LIÊN QUAN</h2>
+              <div class="widget-blog">
+                <h3 class="introduce-text">Tin tức về VNU-CEA</h3>
+                <div class="blog-item blog-item-horizontal">
+                  <div class="blog-image">
+                    <img src="./assets/image/blog1.jpg" />
+                    <div class="categories">
+                      <span class="new">Mới</span>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Đào tạo</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="#">
+                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
+                      48
+                    </a>
+                  </div>
+                </div>
+                <div class="blog-item blog-item-horizontal">
+                  <div class="blog-image">
+                    <img src="./assets/image/blog2.jpg" />
+                  </div>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Tập huấn</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="#">
+                      Thông báo tổ chức tập huấn nghiệp vụ kiểm định viên toàn
+                      Việt Nam
+                    </a>
+                  </div>
+                </div>
+                <div class="blog-item blog-item-horizontal">
+                  <div class="blog-image">
+                    <img src="./assets/image/blog3.jpg" />
+                  </div>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Kết quả</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="#">
+                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
+                      48
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="mission"
+          role="tabpanel"
+          aria-labelledby="mission-tab"
+        >
+          <div class="single-blog__content">
+            <div class="single-blog__content--left">
+              <h2>Sứ mệnh & tầm nhìn</h2>
+              <img src="./assets/image/mision-vision.jpg" width="100%" />
+            </div>
+            <div class="single-blog__content--right">
+              <h2>TIN LIÊN QUAN</h2>
+              <div class="widget-blog">
+                <h3 class="introduce-text">Tin tức về VNU-CEA</h3>
+                <div class="blog-item blog-item-horizontal">
+                  <div class="blog-image">
+                    <img src="./assets/image/blog1.jpg" />
+                    <div class="categories">
+                      <span class="new">Mới</span>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Đào tạo</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="#">
+                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
+                      48
+                    </a>
+                  </div>
+                </div>
+                <div class="blog-item blog-item-horizontal">
+                  <div class="blog-image">
+                    <img src="./assets/image/blog2.jpg" />
+                  </div>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Tập huấn</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="#">
+                      Thông báo tổ chức tập huấn nghiệp vụ kiểm định viên toàn
+                      Việt Nam
+                    </a>
+                  </div>
+                </div>
+                <div class="blog-item blog-item-horizontal">
+                  <div class="blog-image">
+                    <img src="./assets/image/blog3.jpg" />
+                  </div>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Kết quả</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="#">
+                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
+                      48
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="organizational"
+          role="tabpanel"
+          aria-labelledby="organizational-tab"
+        >
+          <div class="single-blog__content">
+            <div class="single-blog__content--left">
+              <h2>Cơ cấu tổ chức</h2>
+              <div class="text-center">
+                <img src="./assets/image/organization.jpg" width="100%" />
+              </div>
+            </div>
+            <div class="single-blog__content--right">
+              <h2>TIN LIÊN QUAN</h2>
+              <div class="widget-blog">
+                <h3 class="introduce-text">Tin tức về VNU-CEA</h3>
+                <div class="blog-item blog-item-horizontal">
+                  <div class="blog-image">
+                    <img src="./assets/image/blog1.jpg" />
+                    <div class="categories">
+                      <span class="new">Mới</span>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Đào tạo</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="#">
+                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
+                      48
+                    </a>
+                  </div>
+                </div>
+                <div class="blog-item blog-item-horizontal">
+                  <div class="blog-image">
+                    <img src="./assets/image/blog2.jpg" />
+                  </div>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Tập huấn</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="#">
+                      Thông báo tổ chức tập huấn nghiệp vụ kiểm định viên toàn
+                      Việt Nam
+                    </a>
+                  </div>
+                </div>
+                <div class="blog-item blog-item-horizontal">
+                  <div class="blog-image">
+                    <img src="./assets/image/blog3.jpg" />
+                  </div>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Kết quả</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="#">
+                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
+                      48
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="hr"
+          role="tabpanel"
+          aria-labelledby="hr-tab"
+        >
+          <div class="hr__content">
+            <h2>Tổ chức nhân sự</h2>
+            <ul class="nav nav-hr">
+              <li>
+                <a href="#hr1" class="tab-btn active">Hội đồng quản lý</a>
+              </li>
+              <li><a href="#hr2" class="tab-btn">Ban Giám đốc</a></li>
+              <li><a href="#hr3" class="tab-btn">Hội đồng kiểm định</a></li>
+              <li>
+                <a href="#hr4" class="tab-btn">Phòng chức năng, chuyên môn</a>
+              </li>
+              <li><a href="#hr5" class="tab-btn">Kiểm định viên</a></li>
+            </ul>
+
+            <div id="hr1" class="tab-content-hr active">
+              <div class="hr-list">
+                <div class="hr-item">
+                  <div class="img-logo">
+                    <img src="./assets/image/icon-vnu.png" />
+                  </div>
+                  <img src="./assets/image/hr1.png" />
+                  <div class="info">
+                    <p>PGS.TS. Đinh Văn Toàn</p>
+                    <p class="position">Chủ tịch</p>
+                  </div>
+                </div>
+                <div class="hr-item">
+                  <div class="img-logo">
+                    <img src="./assets/image/icon-vnu.png" />
+                  </div>
+                  <img src="./assets/image/hr2.png" />
+                  <div class="info">
+                    <p>TS. Nguyễn Thị Thu Hương</p>
+                    <p class="position">Uỷ viên Thư ký</p>
+                  </div>
+                </div>
+                <div class="hr-item">
+                  <div class="img-logo">
+                    <img src="./assets/image/icon-vnu.png" />
+                  </div>
+                  <img src="./assets/image/hr3.png" />
+                  <div class="info">
+                    <p>GS.TS. Phạm Văn Cường</p>
+                    <p class="position">Ủy viên</p>
+                  </div>
+                </div>
+                <div class="hr-item">
+                  <div class="img-logo">
+                    <img src="./assets/image/icon-vnu.png" />
+                  </div>
+                  <img src="./assets/image/hr4.png" />
+                  <div class="info">
+                    <p>GS.TS. Nguyễn Hữu Đức</p>
+                    <p class="position">Ủy viên</p>
+                  </div>
+                </div>
+                <div class="hr-item">
+                  <div class="img-logo">
+                    <img src="./assets/image/icon-vnu.png" />
+                  </div>
+                  <img src="./assets/image/hr5.png" />
+                  <div class="info">
+                    <p>GS.TS. Phạm Văn Cường</p>
+                    <p class="position">Ủy viên</p>
+                  </div>
+                </div>
+                <div class="hr-item">
+                  <div class="img-logo">
+                    <img src="./assets/image/icon-vnu.png" />
+                  </div>
+                  <img src="./assets/image/hr6.png" />
+                  <div class="info">
+                    <p>PGS.TS. Đinh Văn Toàn</p>
+                    <p class="position">Ủy viên</p>
+                  </div>
+                </div>
+                <div class="hr-item">
+                  <div class="img-logo">
+                    <img src="./assets/image/icon-vnu.png" />
+                  </div>
+                  <img src="./assets/image/hr7.png" />
+                  <div class="info">
+                    <p>TS. Nguyễn Thị Thu Hương</p>
+                    <p class="position">Ủy viên</p>
+                  </div>
+                </div>
+                <div class="hr-item">
+                  <div class="img-logo">
+                    <img src="./assets/image/icon-vnu.png" />
+                  </div>
+                  <img src="./assets/image/hr8.png" />
+                  <div class="info">
+                    <p>PGS.TS. Đinh Văn Toàn</p>
+                    <p class="position">Ủy viên</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="hr2" class="tab-content-hr">Ban Giám đốc</div>
+            <div id="hr3" class="tab-content-hr">Hội đồng kiểm định</div>
+            <div id="hr4" class="tab-content-hr">
+              Phòng chức năng, chuyên môn
+            </div>
+            <div id="hr5" class="tab-content-hr">Kiểm định viên</div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="regulation"
+          role="tabpanel"
+          aria-labelledby="regulation-tab"
+        >
+          <div class="single-blog__content">
+            <div class="single-blog__content--left">
+              <h2>Quy chế hoạch động</h2>
+              <div class="detail">
+                <p class="mb-4">
+                  Là một đại học hàng đầu của đất nước có kinh nghiệm và thế
+                  mạnh trong lĩnh vực bảo đảm và kiểm định chất lượng giáo dục,
+                  năm 2013 Đại học Quốc gia Hà Nội (ĐHQGHN) được Bộ Giáo dục và
+                  Đào tạo (Bộ GDĐT) giao xây dựng đề án thành lập trung tâm kiểm
+                  định chất lượng giáo dục.
+                </p>
+                <p>
+                  lượng giáo dục - ĐHQGHN (Trung tâm) đánh dấu sự ra đời của một
+                  trung tâm kiểm định chất lượng giáo dục đầu tiên tại Việt Nam.
+                </p>
+                <p class="text-indent-2">
+                  Trung tâm là đơn vị sự nghiệp công lập có tư cách pháp nhân
+                  được giao chức năng kiểm định chất lượng giáo dục (KĐCLGD) đối
+                  với các CSGD ngoài ĐHQGHN, tư vấn đảm bảo và cải tiến chất
+                  lượng đồng thời tổ chức đào tạo và bồi dưỡng nghiệp vụ về kiểm
+                  định chất lượng giáo dục.
+                </p>
+                <p class="text-indent-2">
+                  Kể từ khi Bộ trưởng Bộ GDĐT có quyết định bổ nhiệm Giám đốc
+                  vào tháng 12 năm 2013 và cấp phép hoạt động vào tháng 11 năm
+                  2014, Trung tâm đã xây dựng, triển khai chiến lược phát triển
+                  và các kế hoạch trung hạn, hằng năm để thực hiện tốt sứ mạng
+                  của mình, góp phần đáng kể vào phát triển hệ thống KĐCLGD và
+                  xây dựng văn hóa chất lượng trong các CSGD đại học và trường
+                  cao đẳng tại Việt Nam.
+                </p>
+                <p class="text-indent-2">
+                  Sau 11 năm hoạt động, năm 2025 đã ghi nhận dấu mốc chuyển biến
+                  quan trọng về thể chế và tổ chức của Trung tâm theo cơ chế tự
+                  chủ toàn diện với sự công nhận Hội đồng quản lý bởi cơ quan có
+                  thẩm quyền . Với mô hình quản trị hiện đại, chuyên nghiệp và
+                  minh bạch, Trung tâm tiếp tục khẳng định vai trò trong hệ
+                  thống giáo dục đại học và đang hiện thực hóa tầm nhìn trở
+                  thành tổ chức kiểm định hàng đầu tại Việt Nam, có uy tín trong
+                  khu vực và quốc tế.
+                </p>
+                <p class="text-indent-2 mt-4">
+                  Những kết quả chủ yếu sau 10 năm xây dựng và phát triển
+                </p>
+                <p class="text-indent-2">
+                  Về xây dựng tổ chức, phát triển đội ngũ: Trung tâm có cơ cấu
+                  tổ chức được hoàn thiện gồm: Chi bộ, Hội đồng quản lý, Ban
+                  Giám đốc, Hội đồng Kiểm định chất lượng giáo dục, tổ chức Công
+                  đoàn, Đoàn thanh niên và các phòng chức năng. Để thực hiện
+                  đánh giá chất lượng, Trung tâm có đội ngũ cộng tác viên là các
+                  kiểm định viên và đánh giá viên làm việc toàn thời gian giàu
+                  kinh nghiệm và có trình độ cao để thực hiện các hoạt động
+                  KĐCLGD với trên 200 người, trong đó có 30 GS, 102 PGS.
+                </p>
+                <p class="text-indent-2">
+                  Về xây dựng và hoàn thiện hệ thống văn bản quản lý: Bên cạnh
+                  việc tuân thủ các văn bản quy định chung của Nhà nước, Bộ GDĐT
+                  và ĐHQGHN, Trung tâm đã xây dựng và ban hành đầy đủ hệ thống
+                  văn bản quản lý nội bộ và các quy trình, công cụ để quản lý
+                  trong các lĩnh vực hoạt động: đánh giá và công nhận chất lượng
+                  giáo dục; hợp tác phát triển; tổ chức cán bộ; thanh tra - pháp
+                  chế; hành chính; kế hoạch và tài chính; thi đua khen thưởng.
+                  Các văn bản của Trung tâm được định kỳ cập nhật, bổ sung theo
+                  các quy định hiện hành của pháp luật, của ĐHQGHN và phù hợp
+                  với thực tiễn.
+                </p>
+                <p class="text-indent-2">
+                  Về hoạt động KĐCLGD: Tính đến Tháng 5 năm 2025, Trung tâm đã
+                  hoàn thành thẩm định 123 báo cáo tự đánh giá (TĐG) cơ sở GDĐH,
+                  triển khai ĐGN cho 111 lượt cơ sở GDĐH và cấp Giấy chứng nhận
+                  KĐCLGD cho 107 lượt cơ sở GDĐH (47 cơ sở GDĐH đã đánh giá
+                  CK2), thẩm định 06 báo cáo TĐG và hoàn thánh đánh giá ngoài 06
+                  lượt Trường CĐSP, cấp Giấy chứng nhận KĐCLGD cho 04 lượt
+                  Trường CĐSP (trong đó 01 trường ở chu kỳ2); Đối với chương
+                  trình đào tạo (CTĐT), thẩm định 655 báo cáo TĐG các trình độ
+                  (03 Cao đẳng, 575 trình độ ĐH, 66 CTĐT trình độ ThS), triển
+                  khai đánh giá ngoài cho 626 lượt CTĐT và đã cấp Giấy chứng
+                  nhận KĐCLGD cho 602 CTĐT (03 trình độ CĐ, 539 CTĐT trình độ
+                  ĐH, 60 CTĐT trình độ ThS).
+                </p>
+                <p>
+                  Đào tạo, bồi dưỡng nâng cao năng lực đội ngũ: Trung tâm đã tổ
+                  chức và phối hợp tổ chức 46 Khoá đào tạo/bồi dưỡng nghiệp vụ
+                  KĐV với 2.103 học viên, trong đó 2.041 học viên đã được cấp
+                  chứng chỉ/chứng nhận hoàn thành chương trình bồi dưỡng (trong
+                  đó có 392 người được cấp thẻ KĐV). Trung tâm cũng đã tổ chức
+                  38 hội thảo, tập huấn, tọa đàm để nâng cao năng lực cho đội
+                  ngũ kiểm định viên, chuyên gia và đánh giá viên của Trung tâm
+                  thu hút sự tham gia của hơn 1.000 lượt người trên cả nước.
+                </p>
+                <img src="./assets/image/single-blog.jpg" width="100%" />
+                <p>Một số danh hiệu đã được ghi nhận, khen thưởng</p>
+                <p class="text-indent-2">
+                  Trung tâm đạt các danh hiệu như: Tập thể lao động xuất sắc
+                  trong nhiều năm; Cờ thi đua của ĐHQGHN trong các năm 2022,
+                  2023; Bằng khen của Giám đốc ĐHQGHN các năm 2019, 2023; Bằng
+                  khen của Bộ trưởng Bộ GDĐT về thành tích xuất sắc trong quá
+                  trình 15 năm xây dựng và phát triển hệ thống bảo đảm và
+                  KĐCLGD; Bằng khen Bộ trưởng Bộ GDĐT về thành tích xuất sắc
+                  trong xây dựng và phát triển Trung tâm vào năm 2023. Công đoàn
+                  Trung tâm được đánh giá là Công đoàn cơ sở vững mạnh, được
+                  nhận Bằng khen của Công đoàn Giáo dục Việt Nam năm 2023.
+                </p>
+              </div>
+            </div>
+            <div class="single-blog__content--right">
+              <h2>TIN LIÊN QUAN</h2>
+              <div class="widget-blog">
+                <h3 class="introduce-text">Tin tức về VNU-CEA</h3>
+                <div class="blog-item blog-item-horizontal">
+                  <div class="blog-image">
+                    <img src="./assets/image/blog1.jpg" />
+                    <div class="categories">
+                      <span class="new">Mới</span>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Đào tạo</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="#">
+                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
+                      48
+                    </a>
+                  </div>
+                </div>
+                <div class="blog-item blog-item-horizontal">
+                  <div class="blog-image">
+                    <img src="./assets/image/blog2.jpg" />
+                  </div>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Tập huấn</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="#">
+                      Thông báo tổ chức tập huấn nghiệp vụ kiểm định viên toàn
+                      Việt Nam
+                    </a>
+                  </div>
+                </div>
+                <div class="blog-item blog-item-horizontal">
+                  <div class="blog-image">
+                    <img src="./assets/image/blog3.jpg" />
+                  </div>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Kết quả</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="#">
+                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
+                      48
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <img src="./assets/image/logo-footer.png" width="100%" />
+          <p>
+            Tòa nhà HT2, Khu đô thị Đại học Quốc gia Hà Nội, xã Hòa Lạc, thành
+            phố Hà Nội
+          </p>
+          <div class="d-flex gap-3 group-social">
+            <a href="#"><img src="./assets/icon/Facebook.svg" /></a>
+            <a href="#">
+              <svg
+                width="28"
+                height="29"
+                viewBox="0 0 28 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
+                <rect
+                  width="17.5"
+                  height="17.5"
+                  transform="translate(5.25 5.64032)"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.21875 7.60907H12.5869L14.2291 11.9403L12.4589 13.0191C13.064 14.1584 14.1595 15.3363 15.3246 15.9453L16.3997 14.1533L20.7812 15.8024V21.1716H20.1979C16.3815 21.1716 13.1282 19.8635 10.8275 17.5628C8.52685 15.2621 7.21875 12.0088 7.21875 8.1924V7.60907ZM8.39649 8.77574C8.52205 12.0595 9.70918 14.7946 11.6525 16.7379C13.5958 18.6811 16.3308 19.8683 19.6146 19.9938V16.6098L16.8995 15.588L15.8046 17.4128L15.3464 17.2352C13.5206 16.5276 11.8575 14.6667 11.1686 13.0194L10.9752 12.5571L12.7948 11.4482L11.7815 8.77574H8.39649Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="#"
+              ><svg
+                width="28"
+                height="29"
+                viewBox="0 0 28 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
+                <rect
+                  width="17.5"
+                  height="17.5"
+                  transform="translate(5.25 5.64032)"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.1471 8.70276H6.85547V20.0778H21.1471V8.70276ZM8.02214 10.4788V18.9111H19.9805V10.4787L14.0013 15.1292L8.02214 10.4788ZM18.8636 9.86943H9.139L14.0013 13.6512L18.8636 9.86943Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>© 2025 CEA - VNU Hanoi. All rights reserved.</p>
+          <div class="d-flex gap-4">
+            <a href="#">Privay Policy</a>
+            <a href="#">Term of Service</a>
+          </div>
+        </div>
+      </div>
+      <script src="./assets/css/main.js"></script>
+    </div>
+  </body>
+</html>
