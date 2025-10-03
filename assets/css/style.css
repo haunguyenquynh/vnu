@@ -121,7 +121,7 @@
   z-index: 999; }
 .header .navbar-toggler {
   display: block;
-  font-size: 24px;
+  font-size: 28px;
   color: #058656; }
 .header .navbar-expand-lg {
   padding: 0; }
@@ -700,7 +700,7 @@
     padding: 0 2px;
     height: 44px;
     min-width: 44px;
-    line-height: 42px;
+    line-height: 40px;
     box-shadow: none; }
     .pagination .page-link:hover {
       background: #157c6b;
@@ -718,22 +718,6 @@
   max-width: 1130px;
   margin: 0 auto 48px;
   border-radius: 16px; }
-.finding-page .related-blog {
-  margin-bottom: 168px; }
-  .finding-page .related-blog .nav-pills {
-    gap: 19px;
-    align-items: center;
-    padding: 48px 0; }
-    .finding-page .related-blog .nav-pills .nav-link {
-      box-shadow: 0px 4px 4px 0px #0000000d;
-      background: #fff;
-      padding: 12px;
-      border-radius: 8px;
-      font-weight: 500;
-      font-size: 17px;
-      line-height: 150%;
-      text-align: center;
-      color: #000; }
 
 .single-blog .breadcrumb-detail {
   display: flex;
@@ -987,5 +971,139 @@
   padding: 24px 0 48px; }
   .public-page .introduce-text {
     margin-bottom: 40px; }
+
+.procedure-page {
+  padding-bottom: 64px; }
+  .procedure-page .detail {
+    max-width: 681px;
+    margin: 0 auto; }
+    .procedure-page .detail img {
+      margin: 32px 0; }
+
+.nav-fill {
+  gap: 32px;
+  margin-bottom: 64px; }
+  .nav-fill .nav-link {
+    background: #f7f7f7;
+    padding: 24px;
+    text-align: left;
+    border-radius: 0;
+    color: #058656;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%; }
+    .nav-fill .nav-link p {
+      margin: 0; }
+    .nav-fill .nav-link .fa {
+      font-size: 20px; }
+    .nav-fill .nav-link .time {
+      color: #909090;
+      display: flex;
+      align-items: center;
+      gap: 8px; }
+    .nav-fill .nav-link h3 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 150%;
+      text-transform: uppercase;
+      color: #000;
+      margin: 8px 0; }
+    .nav-fill .nav-link.active {
+      background: #32216f;
+      color: rgba(255, 255, 255, 0.6); }
+      .nav-fill .nav-link.active .time {
+        color: rgba(255, 255, 255, 0.6); }
+      .nav-fill .nav-link.active h3 {
+        color: #fff; }
+
+.related-blog {
+  margin-bottom: 148px; }
+  .related-blog .nav-pills {
+    gap: 19px;
+    align-items: center;
+    padding: 48px 0; }
+    .related-blog .nav-pills .nav-link {
+      box-shadow: 0px 4px 4px 0px #0000000d;
+      background: #fff;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 150%;
+      text-align: center;
+      color: #000; }
+
+.result-page {
+  max-width: 1130px;
+  margin: 0 auto; }
+  .result-page .title-page {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+    text-transform: uppercase;
+    margin-bottom: 16px; }
+  .result-page .show-result {
+    font-size: 20px;
+    color: #909090;
+    line-height: 160%;
+    margin-bottom: 40px; }
+    .result-page .show-result strong {
+      color: #000; }
+
+.training-page .nav-tabs .nav-item {
+  flex: auto; }
+.training-page .nav-tabs .nav-link {
+  padding: 0; }
+.training-page .detail .table-responsive img {
+  margin: 0; }
+
+.contact-page {
+  max-width: 681px;
+  font-size: 16px;
+  line-height: 150%; }
+  .contact-page .form {
+    display: flex;
+    flex-flow: column;
+    gap: 16px;
+    margin: 0; }
+    .contact-page .form .form-control {
+      padding: 20px 8px 20px 16px;
+      border-radius: 16px;
+      border: 2px solid #dadada;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      font-size: 18px;
+      font-weight: 500; }
+      .contact-page .form .form-control::placeholder {
+        color: #3a3a3a;
+        opacity: 0.5; }
+
+.document-page .result-page {
+  max-width: 1034px; }
+.document-page .nav-fill {
+  display: grid;
+  grid-template-columns: auto auto auto auto; }
+  @media (max-width: 1310px) {
+    .document-page .nav-fill {
+      grid-template-columns: auto auto; } }
+  @media (max-width: 767px) {
+    .document-page .nav-fill {
+      grid-template-columns: auto; } }
+  .document-page .nav-fill .nav-item {
+    flex: 1; }
+  .document-page .nav-fill .nav-link.active {
+    background: #157c6b; }
+
+.cooperate-page .nav-fill .nav-item {
+  flex: 1; }
+  @media (max-width: 1199px) {
+    .cooperate-page .nav-fill .nav-item {
+      flex: auto;
+      width: calc(50% - 32px); } }
+  @media (max-width: 667px) {
+    .cooperate-page .nav-fill .nav-item {
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
