@@ -13,6 +13,9 @@ $active: #32216f;
 
 .header {
   background: linear-gradient(282.43deg, #f2efff 0%, #e9f5f1 100%);
+  @media (max-width: 1024px) {
+    background: #fff;
+  }
 }
 
 .header-container {
@@ -30,6 +33,7 @@ $active: #32216f;
     @media (max-width: 1024px) {
       padding: 16px 0;
       gap: 16px;
+      display: none;
     }
 
     .form-search {
@@ -190,18 +194,31 @@ $active: #32216f;
   .navbar-expand-lg {
     padding: 0;
   }
-
-  @media (min-width: 1200px) {
-    .header-bottom {
-      background: $main;
+  .header-bottom {
+    background: $main;
+    @media (max-width: 1199px) {
+      .navbar-toggler {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 24px;
+        .btn-menu,
+        a {
+          background: transparent;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 150%;
+          text-transform: uppercase;
+          color: #fff;
+        }
+      }
     }
-
+  }
+  @media (min-width: 1200px) {
     .navbar-expand-lg .navbar-nav {
       flex-direction: row;
       justify-content: center;
       margin: auto;
     }
-
     .navbar-toggler {
       display: none;
     }
@@ -281,6 +298,9 @@ $active: #32216f;
 
       .mySwiper {
         max-height: 502px;
+        @media (max-width: 667px) {
+          max-height: 191px;
+        }
         border-radius: 0 48px 48px 0;
 
         @media (max-width: 1199px) {
@@ -295,6 +315,9 @@ $active: #32216f;
         .swiper-pagination-custom,
         .swiper-pagination-fraction {
           bottom: 24px;
+          @media (max-width: 667px) {
+            bottom: 6px;
+          }
         }
 
         .swiper-pagination-bullet {
@@ -303,16 +326,26 @@ $active: #32216f;
           width: 12px;
           height: 12px;
           border-radius: 24px;
+          @media (max-width: 667px) {
+            width: 5px;
+            height: 5px;
+            margin: 0 2px;
+          }
         }
 
         .swiper-pagination-bullet-active {
           background: $main2;
           width: 65px;
+          @media (max-width: 667px) {
+            width: 24px;
+          }
         }
 
         .swiper-slide {
           max-height: 502px;
-
+          @media (max-width: 667px) {
+            max-height: 191px;
+          }
           .content {
             position: absolute;
             bottom: 0;
@@ -322,6 +355,7 @@ $active: #32216f;
             @media (max-width: 667px) {
               padding-left: 12px;
               padding-right: 12px;
+              padding-bottom: 24px;
             }
 
             .tag {
@@ -335,6 +369,11 @@ $active: #32216f;
               text-transform: uppercase;
               margin-bottom: 16px;
               color: #fff;
+              @media (max-width: 667px) {
+                padding: 0px 6px;
+                font-size: 9px;
+                margin-bottom: 8px;
+              }
             }
 
             a {
@@ -345,7 +384,11 @@ $active: #32216f;
               display: block;
 
               @media (max-width: 667px) {
-                font-size: 16px;
+                &.caroursel-title {
+                  font-size: 12px;
+                  height: 36px;
+                  overflow: hidden;
+                }
               }
 
               &:hover {
@@ -374,6 +417,9 @@ $active: #32216f;
           width: 100%;
           border-radius: 0;
           height: 502px;
+          @media (max-width: 667px) {
+            height: 191px;
+          }
           object-fit: cover;
         }
       }
@@ -1017,6 +1063,13 @@ $active: #32216f;
     max-width: 1130px;
     margin: 0 auto 48px;
     border-radius: 16px;
+    @media (max-width: 667px) {
+      padding: 24px 16px;
+      .form {
+        flex-flow: column;
+        gap: 8px;
+      }
+    }
   }
 }
 .single-blog {
@@ -1558,13 +1611,13 @@ $active: #32216f;
     color: #fff;
   }
 }
-.table-responsive{
-  thead{
-    tr{
-      th:first-child{
+.table-responsive {
+  thead {
+    tr {
+      th:first-child {
         border-radius: 12px 0 0 12px;
       }
-      th:last-child{
+      th:last-child {
         border-radius: 0 12px 12px 0;
       }
     }
