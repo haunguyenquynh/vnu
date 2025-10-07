@@ -42,7 +42,7 @@
     <header class="header">
       <div class="header-container container">
         <a class="logo-brand" href="./index.html"
-          ><img src="./assets/image/logo.png" alt="menu"
+          ><img src="./assets/image/logo.svg" alt="menu"
         /></a>
         <div class="header-container__content">
           <div class="header-container__right">
@@ -114,16 +114,12 @@
               <i class="bi bi-list"></i>
             </button>
           </div>
-          <form class="d-flex form-search">
-            <button class="btn btn-outline-success" type="submit">
+          <form class="d-flex flex-row-reverse form-search" action="tim-kiem.html" method="GET" id="searchForm">
+            <button class="btn btn-search-icon" type="submit">
               <img src="./assets/icon/search.png" />
             </button>
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Tìm kiếm tất cả"
-              aria-label="Search"
-            />
+            <input class="form-control" type="search" placeholder="Tìm kiếm tất cả" aria-label="Search" id="searchInput"
+              name="q" />
           </form>
         </div>
       </div>
@@ -424,12 +420,12 @@
               <h2>tin hợp tác quốc tế</h2>
               <div class="widget-blog">
                 <div class="blog-item blog-item-horizontal">
-                  <div class="blog-image">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
                     <img src="./assets/image/blog1.jpg" />
                     <div class="categories">
                       <span class="new">Mới</span>
                     </div>
-                  </div>
+                  </a>
                   <div class="content">
                     <div class="post-text">
                       <div class="categories">
@@ -437,16 +433,16 @@
                       </div>
                       <div class="time">08:00 19/04/2025</div>
                     </div>
-                    <a href="#">
+                    <a href="./tin-tuc-chi-tiet.html">
                       Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
                       48
                     </a>
                   </div>
                 </div>
                 <div class="blog-item blog-item-horizontal">
-                  <div class="blog-image">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
                     <img src="./assets/image/blog2.jpg" />
-                  </div>
+                  </a>
                   <div class="content">
                     <div class="post-text">
                       <div class="categories">
@@ -454,16 +450,16 @@
                       </div>
                       <div class="time">08:00 19/04/2025</div>
                     </div>
-                    <a href="#">
+                    <a href="./tin-tuc-chi-tiet.html">
                       Thông báo tổ chức tập huấn nghiệp vụ kiểm định viên toàn
                       Việt Nam
                     </a>
                   </div>
                 </div>
                 <div class="blog-item blog-item-horizontal">
-                  <div class="blog-image">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
                     <img src="./assets/image/blog3.jpg" />
-                  </div>
+                  </a>
                   <div class="content">
                     <div class="post-text">
                       <div class="categories">
@@ -471,15 +467,49 @@
                       </div>
                       <div class="time">08:00 19/04/2025</div>
                     </div>
-                    <a href="#">
+                    <a href="./tin-tuc-chi-tiet.html">
                       Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
                       48
                     </a>
                   </div>
                 </div>
-                <button class="btn btn-outline-success">
+                <div class="blog-item blog-item-horizontal">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
+                    <img src="./assets/image/blog3.jpg" />
+                  </a>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Kết quả</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="./tin-tuc-chi-tiet.html">
+                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
+                      48
+                    </a>
+                  </div>
+                </div>
+                <div class="blog-item blog-item-horizontal">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
+                    <img src="./assets/image/blog3.jpg" />
+                  </a>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Kết quả</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="./tin-tuc-chi-tiet.html">
+                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
+                      48
+                    </a>
+                  </div>
+                </div>
+                <a href="./tin-tuc.html" class="btn btn-outline-success">
                   Xem tất cả <i class="bi bi-chevron-right"></i>
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -650,12 +680,12 @@
               <div class="widget-blog">
                 <h3 class="introduce-text">Tin tức về VNU-CEA</h3>
                 <div class="blog-item blog-item-horizontal">
-                  <div class="blog-image">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
                     <img src="./assets/image/blog1.jpg" />
                     <div class="categories">
                       <span class="new">Mới</span>
                     </div>
-                  </div>
+                  </a>
                   <div class="content">
                     <div class="post-text">
                       <div class="categories">
@@ -663,16 +693,16 @@
                       </div>
                       <div class="time">08:00 19/04/2025</div>
                     </div>
-                    <a href="#">
+                    <a href="./tin-tuc-chi-tiet.html">
                       Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
                       48
                     </a>
                   </div>
                 </div>
                 <div class="blog-item blog-item-horizontal">
-                  <div class="blog-image">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
                     <img src="./assets/image/blog2.jpg" />
-                  </div>
+                  </a>
                   <div class="content">
                     <div class="post-text">
                       <div class="categories">
@@ -680,16 +710,16 @@
                       </div>
                       <div class="time">08:00 19/04/2025</div>
                     </div>
-                    <a href="#">
+                    <a href="./tin-tuc-chi-tiet.html">
                       Thông báo tổ chức tập huấn nghiệp vụ kiểm định viên toàn
                       Việt Nam
                     </a>
                   </div>
                 </div>
                 <div class="blog-item blog-item-horizontal">
-                  <div class="blog-image">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
                     <img src="./assets/image/blog3.jpg" />
-                  </div>
+                  </a>
                   <div class="content">
                     <div class="post-text">
                       <div class="categories">
@@ -697,15 +727,49 @@
                       </div>
                       <div class="time">08:00 19/04/2025</div>
                     </div>
-                    <a href="#">
+                    <a href="./tin-tuc-chi-tiet.html">
                       Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
                       48
                     </a>
                   </div>
                 </div>
-                <button class="btn btn-outline-success">
+                <div class="blog-item blog-item-horizontal">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
+                    <img src="./assets/image/blog3.jpg" />
+                  </a>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Kết quả</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="./tin-tuc-chi-tiet.html">
+                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
+                      48
+                    </a>
+                  </div>
+                </div>
+                <div class="blog-item blog-item-horizontal">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
+                    <img src="./assets/image/blog3.jpg" />
+                  </a>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Kết quả</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="./tin-tuc-chi-tiet.html">
+                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
+                      48
+                    </a>
+                  </div>
+                </div>
+                <a href="./tin-tuc.html" class="btn btn-outline-success">
                   Xem tất cả <i class="bi bi-chevron-right"></i>
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -728,12 +792,12 @@
               <div class="widget-blog">
                 <h3 class="introduce-text">Tin tức về VNU-CEA</h3>
                 <div class="blog-item blog-item-horizontal">
-                  <div class="blog-image">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
                     <img src="./assets/image/blog1.jpg" />
                     <div class="categories">
                       <span class="new">Mới</span>
                     </div>
-                  </div>
+                  </a>
                   <div class="content">
                     <div class="post-text">
                       <div class="categories">
@@ -741,16 +805,16 @@
                       </div>
                       <div class="time">08:00 19/04/2025</div>
                     </div>
-                    <a href="#">
+                    <a href="./tin-tuc-chi-tiet.html">
                       Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
                       48
                     </a>
                   </div>
                 </div>
                 <div class="blog-item blog-item-horizontal">
-                  <div class="blog-image">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
                     <img src="./assets/image/blog2.jpg" />
-                  </div>
+                  </a>
                   <div class="content">
                     <div class="post-text">
                       <div class="categories">
@@ -758,16 +822,16 @@
                       </div>
                       <div class="time">08:00 19/04/2025</div>
                     </div>
-                    <a href="#">
+                    <a href="./tin-tuc-chi-tiet.html">
                       Thông báo tổ chức tập huấn nghiệp vụ kiểm định viên toàn
                       Việt Nam
                     </a>
                   </div>
                 </div>
                 <div class="blog-item blog-item-horizontal">
-                  <div class="blog-image">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
                     <img src="./assets/image/blog3.jpg" />
-                  </div>
+                  </a>
                   <div class="content">
                     <div class="post-text">
                       <div class="categories">
@@ -775,15 +839,49 @@
                       </div>
                       <div class="time">08:00 19/04/2025</div>
                     </div>
-                    <a href="#">
+                    <a href="./tin-tuc-chi-tiet.html">
                       Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
                       48
                     </a>
                   </div>
                 </div>
-                <button class="btn btn-outline-success">
+                <div class="blog-item blog-item-horizontal">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
+                    <img src="./assets/image/blog3.jpg" />
+                  </a>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Kết quả</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="./tin-tuc-chi-tiet.html">
+                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
+                      48
+                    </a>
+                  </div>
+                </div>
+                <div class="blog-item blog-item-horizontal">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
+                    <img src="./assets/image/blog3.jpg" />
+                  </a>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Kết quả</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="./tin-tuc-chi-tiet.html">
+                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
+                      48
+                    </a>
+                  </div>
+                </div>
+                <a href="./tin-tuc.html" class="btn btn-outline-success">
                   Xem tất cả <i class="bi bi-chevron-right"></i>
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -1016,12 +1114,12 @@
               <div class="widget-blog">
                 <h3 class="introduce-text">Tin tức về VNU-CEA</h3>
                 <div class="blog-item blog-item-horizontal">
-                  <div class="blog-image">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
                     <img src="./assets/image/blog1.jpg" />
                     <div class="categories">
                       <span class="new">Mới</span>
                     </div>
-                  </div>
+                  </a>
                   <div class="content">
                     <div class="post-text">
                       <div class="categories">
@@ -1029,16 +1127,16 @@
                       </div>
                       <div class="time">08:00 19/04/2025</div>
                     </div>
-                    <a href="#">
+                    <a href="./tin-tuc-chi-tiet.html">
                       Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
                       48
                     </a>
                   </div>
                 </div>
                 <div class="blog-item blog-item-horizontal">
-                  <div class="blog-image">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
                     <img src="./assets/image/blog2.jpg" />
-                  </div>
+                  </a>
                   <div class="content">
                     <div class="post-text">
                       <div class="categories">
@@ -1046,16 +1144,16 @@
                       </div>
                       <div class="time">08:00 19/04/2025</div>
                     </div>
-                    <a href="#">
+                    <a href="./tin-tuc-chi-tiet.html">
                       Thông báo tổ chức tập huấn nghiệp vụ kiểm định viên toàn
                       Việt Nam
                     </a>
                   </div>
                 </div>
                 <div class="blog-item blog-item-horizontal">
-                  <div class="blog-image">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
                     <img src="./assets/image/blog3.jpg" />
-                  </div>
+                  </a>
                   <div class="content">
                     <div class="post-text">
                       <div class="categories">
@@ -1063,15 +1161,49 @@
                       </div>
                       <div class="time">08:00 19/04/2025</div>
                     </div>
-                    <a href="#">
+                    <a href="./tin-tuc-chi-tiet.html">
                       Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
                       48
                     </a>
                   </div>
                 </div>
-                <button class="btn btn-outline-success">
+                <div class="blog-item blog-item-horizontal">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
+                    <img src="./assets/image/blog3.jpg" />
+                  </a>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Kết quả</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="./tin-tuc-chi-tiet.html">
+                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
+                      48
+                    </a>
+                  </div>
+                </div>
+                <div class="blog-item blog-item-horizontal">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
+                    <img src="./assets/image/blog3.jpg" />
+                  </a>
+                  <div class="content">
+                    <div class="post-text">
+                      <div class="categories">
+                        <span>Kết quả</span>
+                      </div>
+                      <div class="time">08:00 19/04/2025</div>
+                    </div>
+                    <a href="./tin-tuc-chi-tiet.html">
+                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
+                      48
+                    </a>
+                  </div>
+                </div>
+                <a href="./tin-tuc.html" class="btn btn-outline-success">
                   Xem tất cả <i class="bi bi-chevron-right"></i>
-                </button>
+                </a>
               </div>
             </div>
           </div>

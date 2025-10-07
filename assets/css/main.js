@@ -50,7 +50,7 @@ new Swiper(".blog-slider-3", {
   slidesPerView: 3,
   spaceBetween: 16,
   slideToClickedSlide: true,
-  observer: true, 
+  observer: true,
   observeParents: true,
   breakpoints: {
     1920: {
@@ -69,7 +69,7 @@ new Swiper(".logo-slider", {
   loop: true,
   slidesPerView: 7,
   paginationClickable: true,
-  spaceBetween: 72,
+  spaceBetween: 62,
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
@@ -78,15 +78,15 @@ new Swiper(".logo-slider", {
   breakpoints: {
     1920: {
       slidesPerView: 7,
-      spaceBetween: 72,
+      spaceBetween: 62,
     },
     1199: {
       slidesPerView: 5,
-      spaceBetween: 32,
+      spaceBetween: 22,
     },
     667: {
       slidesPerView: 3,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
   },
 });
@@ -108,3 +108,20 @@ tabBtns.forEach(btn => {
     document.getElementById(targetId).classList.add("active");
   });
 });
+
+
+const params = new URLSearchParams(window.location.search);
+const keyword = params.get('q');
+
+if (keyword) {
+  // Show keyword in result line
+  document.getElementById('searchKeyword').textContent = keyword;
+
+  // Optional: prefill the search bar if it also exists on this page
+  const input = document.getElementById('searchInput');
+  if (input) input.value = keyword;
+
+  // Optional: filter results by keyword here
+} else {
+  document.getElementById('searchKeyword').textContent = "Không có từ khóa";
+}

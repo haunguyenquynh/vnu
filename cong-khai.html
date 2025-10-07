@@ -1,354 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
-    <link href="./assets/css/common.css" rel="stylesheet" />
-    <link href="./assets/css/style.css" rel="stylesheet" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <link href="./assets/css/common.css" rel="stylesheet" />
+  <link href="./assets/css/style.css" rel="stylesheet" />
 
-    <title>Công khai</title>
-  </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 
-  <body>
-    <header class="header">
-      <div class="header-container container">
-        <a class="logo-brand" href="./index.html"
-          ><img src="./assets/image/logo.png" alt="menu"
-        /></a>
-        <div class="header-container__content">
-          <div class="header-container__right">
-            <div class="d-flex gap-3 group-social">
-              <a href="#"><img src="./assets/icon/Facebook.svg" /></a>
-              <a href="#">
-                <svg
-                  width="28"
-                  height="29"
-                  viewBox="0 0 28 29"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
-                  <rect
-                    width="17.5"
-                    height="17.5"
-                    transform="translate(5.25 5.64032)"
-                    fill="currentColor"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M7.21875 7.60907H12.5869L14.2291 11.9403L12.4589 13.0191C13.064 14.1584 14.1595 15.3363 15.3246 15.9453L16.3997 14.1533L20.7812 15.8024V21.1716H20.1979C16.3815 21.1716 13.1282 19.8635 10.8275 17.5628C8.52685 15.2621 7.21875 12.0088 7.21875 8.1924V7.60907ZM8.39649 8.77574C8.52205 12.0595 9.70918 14.7946 11.6525 16.7379C13.5958 18.6811 16.3308 19.8683 19.6146 19.9938V16.6098L16.8995 15.588L15.8046 17.4128L15.3464 17.2352C13.5206 16.5276 11.8575 14.6667 11.1686 13.0194L10.9752 12.5571L12.7948 11.4482L11.7815 8.77574H8.39649Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
-              <a href="#"
-                ><svg
-                  width="28"
-                  height="29"
-                  viewBox="0 0 28 29"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
-                  <rect
-                    width="17.5"
-                    height="17.5"
-                    transform="translate(5.25 5.64032)"
-                    fill="currentColor"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M21.1471 8.70276H6.85547V20.0778H21.1471V8.70276ZM8.02214 10.4788V18.9111H19.9805V10.4787L14.0013 15.1292L8.02214 10.4788ZM18.8636 9.86943H9.139L14.0013 13.6512L18.8636 9.86943Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
-            </div>
-            <div class="d-flex gap-2">
-              <button class="btn" type="button">
-                <img src="./assets/image/flag.png" />
-              </button>
-              <button class="btn" type="button">
-                <img src="./assets/image/flags.png" />
-              </button>
-            </div>
-            <button
-              class="navbar-toggler p-0 border-0"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbarDark"
-              aria-controls="offcanvasNavbarDark"
-              aria-label="Toggle navigation"
-            >
-              <i class="bi bi-list"></i>
-            </button>
-          </div>
-          <form class="d-flex form-search">
-            <button class="btn btn-outline-success" type="submit">
-              <img src="./assets/icon/search.png" />
-            </button>
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Tìm kiếm tất cả"
-              aria-label="Search"
-            />
-          </form>
-        </div>
-      </div>
-      <div class="header-bottom">
-        <div class="navbar-toggler">
-          <button
-            class="p-0 border-0 btn-menu"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbarDark"
-            aria-controls="offcanvasNavbarDark"
-            aria-label="Toggle navigation"
-          >
-            Menu
-          </button>
-          <a href="./tim-kiem.html">Tìm kiếm</a>
-          <a href="./lien-he.html">Liên hệ</a>
-        </div>
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <div
-              class="offcanvas offcanvas-start"
-              tabindex="-1"
-              id="offcanvasNavbarDark"
-              aria-labelledby="offcanvasNavbarDarkLabel"
-            >
-              <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarMenu1"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Giới thiệu
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarMenu1">
-                    <li>
-                      <a class="link-item" href="./gioi-thieu.html">Giới thiệu chung</a>
-                    </li>
-                    <li>
-                      <a class="link-item" href="./gioi-thieu.html">Sứ mệnh tầm nhìn</a>
-                    </li>
-                    <li>
-                      <a class="link-item" href="./gioi-thieu.html">Cơ cấu tổ chức</a>
-                    </li>
-                    <li>
-                      <a class="link-item" href="./gioi-thieu.html">Hội đồng kiểm định</a>
-                    </li>
-                    <li>
-                      <a class="link-item" href="./gioi-thieu.html">Quy chế hoạt động</a>
-                    </li>
-                    <li>
-                      <a class="link-item" href="./gioi-thieu.html">Chiến lược phát triển</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./quy-trinh.html"> QUY TRÌNH KĐCLGD </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./ket-qua.html"> KẾT QUẢ KĐCLGD </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./dao-tao.html"> ĐÀO TẠO KĐV </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./tap-huan.html"> TẬP HUẤN ĐBCL </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./doi-tac.html"> HỢP TÁC </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./tai-lieu.html"> TÀI LIỆU </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./lien-he.html"> LIÊN HỆ </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <nav aria-label="breadcrumb" class="breadcrumb-content">
-      <div class="container">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page">Công khai</li>
-        </ol>
-      </div>
-    </nav>
-    <div class="single-blog container">
-      <div class="public-page">
-        <h2>DANH SÁCH VĂN BẢN</h2>
-        <h3 class="introduce-text">30 kết quả</h3>
-        <div class="table-responsive">
-          <table class="table align-middle">
-            <thead class="table-dark">
-              <tr class="align-middle">
-                <th scope="col">Chương trình</th>
-                <th scope="col" class="w-100">Cơ sở giáo dục</th>
-                <th scope="col" class="w-small">Năm</th>
-                <th scope="col">Nghị quyết</th>
-                <th scope="col" class="w-small">Giấy CN</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Sport</th>
-                <td>Đại Học Văn Lang</td>
-                <td class="w-small">2025</td>
-                <td>@NQ/0001</td>
-                <td class="w-small">
-                  <a href="#"><img src="./assets/icon/pdf.png" /></a>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Math</th>
-                <td>Đại Học Lạc Hồng</td>
-                <td class="w-small">2025</td>
-                <td>@NQ/0001</td>
-                <td class="w-small">
-                  <a href="#"><img src="./assets/icon/pdf.png" /></a>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">Physical</th>
-                <td>Đại Học Thuỷ Lợi</td>
-                <td class="w-small">2025</td>
-                <td>@NQ/0001</td>
-                <td class="w-small">
-                  <a href="#"><img src="./assets/icon/pdf.png" /></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <nav aria-label="...">
-          <ul class="pagination">
-            <li class="page-item disabled">
-              <a class="page-link"
-                ><i class="bi bi-chevron-left"></i></a>
-            </li>
-            <li class="page-item active">
-              <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item" aria-current="page">
-              <a class="page-link" href="#">2</a>
-            </li>
-            <li><span class="page-numbers dots">…</span></li>
-            <li class="page-item"><a class="page-link" href="#">99</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#"
-                ><i class="bi bi-chevron-right"></i></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="container">
-        <div class="footer__top">
-          <img src="./assets/image/logo-footer.png" width="100%" />
-          <p>
-            Tòa nhà HT2, Khu đô thị Đại học Quốc gia Hà Nội, xã Hòa Lạc, thành
-            phố Hà Nội
-          </p>
+  <title>Công khai</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container container">
+      <a class="logo-brand" href="./index.html"><img src="./assets/image/logo.svg" alt="menu" /></a>
+      <div class="header-container__content">
+        <div class="header-container__right">
           <div class="d-flex gap-3 group-social">
             <a href="#"><img src="./assets/icon/Facebook.svg" /></a>
             <a href="#">
-              <svg
-                width="28"
-                height="29"
-                viewBox="0 0 28 29"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
-                <rect
-                  width="17.5"
-                  height="17.5"
-                  transform="translate(5.25 5.64032)"
-                  fill="currentColor"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                <rect width="17.5" height="17.5" transform="translate(5.25 5.64032)" fill="currentColor" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M7.21875 7.60907H12.5869L14.2291 11.9403L12.4589 13.0191C13.064 14.1584 14.1595 15.3363 15.3246 15.9453L16.3997 14.1533L20.7812 15.8024V21.1716H20.1979C16.3815 21.1716 13.1282 19.8635 10.8275 17.5628C8.52685 15.2621 7.21875 12.0088 7.21875 8.1924V7.60907ZM8.39649 8.77574C8.52205 12.0595 9.70918 14.7946 11.6525 16.7379C13.5958 18.6811 16.3308 19.8683 19.6146 19.9938V16.6098L16.8995 15.588L15.8046 17.4128L15.3464 17.2352C13.5206 16.5276 11.8575 14.6667 11.1686 13.0194L10.9752 12.5571L12.7948 11.4482L11.7815 8.77574H8.39649Z"
-                  fill="white"
-                />
+                  fill="white" />
               </svg>
             </a>
-            <a href="#"
-              ><svg
-                width="28"
-                height="29"
-                viewBox="0 0 28 29"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+            <a href="#"><svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
-                <rect
-                  width="17.5"
-                  height="17.5"
-                  transform="translate(5.25 5.64032)"
-                  fill="currentColor"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                <rect width="17.5" height="17.5" transform="translate(5.25 5.64032)" fill="currentColor" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M21.1471 8.70276H6.85547V20.0778H21.1471V8.70276ZM8.02214 10.4788V18.9111H19.9805V10.4787L14.0013 15.1292L8.02214 10.4788ZM18.8636 9.86943H9.139L14.0013 13.6512L18.8636 9.86943Z"
-                  fill="white"
-                />
+                  fill="white" />
               </svg>
             </a>
+          </div>
+          <div class="d-flex gap-2">
+            <button class="btn" type="button">
+              <img src="./assets/image/flag.png" />
+            </button>
+            <button class="btn" type="button">
+              <img src="./assets/image/flags.png" />
+            </button>
+          </div>
+          <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+        <form class="d-flex flex-row-reverse form-search" action="tim-kiem.html" method="GET" id="searchForm">
+          <button class="btn btn-search-icon" type="submit">
+            <img src="./assets/icon/search.png" />
+          </button>
+          <input class="form-control" type="search" placeholder="Tìm kiếm tất cả" aria-label="Search" id="searchInput"
+            name="q" />
+        </form>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="navbar-toggler">
+        <button class="p-0 border-0 btn-menu" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark" aria-label="Toggle navigation">
+          Menu
+        </button>
+        <a href="./tim-kiem.html">Tìm kiếm</a>
+        <a href="./lien-he.html">Liên hệ</a>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbarDark"
+            aria-labelledby="offcanvasNavbarDarkLabel">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarMenu1" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Giới thiệu
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarMenu1">
+                  <li>
+                    <a class="link-item" href="./gioi-thieu.html">Giới thiệu chung</a>
+                  </li>
+                  <li>
+                    <a class="link-item" href="./gioi-thieu.html">Sứ mệnh tầm nhìn</a>
+                  </li>
+                  <li>
+                    <a class="link-item" href="./gioi-thieu.html">Cơ cấu tổ chức</a>
+                  </li>
+                  <li>
+                    <a class="link-item" href="./gioi-thieu.html">Hội đồng kiểm định</a>
+                  </li>
+                  <li>
+                    <a class="link-item" href="./gioi-thieu.html">Quy chế hoạt động</a>
+                  </li>
+                  <li>
+                    <a class="link-item" href="./gioi-thieu.html">Chiến lược phát triển</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./quy-trinh.html"> QUY TRÌNH KĐCLGD </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./ket-qua.html"> KẾT QUẢ KĐCLGD </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./dao-tao.html"> ĐÀO TẠO KĐV </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./tap-huan.html"> TẬP HUẤN ĐBCL </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./doi-tac.html"> HỢP TÁC </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./tai-lieu.html"> TÀI LIỆU </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./lien-he.html"> LIÊN HỆ </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="footer__bottom">
-          <p>© 2025 CEA - VNU Hanoi. All rights reserved.</p>
-          <div class="d-flex gap-4">
-            <a href="#">Privay Policy</a>
-            <a href="#">Term of Service</a>
-          </div>
+      </nav>
+    </div>
+  </header>
+  <nav aria-label="breadcrumb" class="breadcrumb-content">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Công khai</li>
+      </ol>
+    </div>
+  </nav>
+  <div class="single-blog container">
+    <div class="public-page">
+      <h2>DANH SÁCH VĂN BẢN</h2>
+      <h3 class="introduce-text">30 kết quả</h3>
+      <div class="table-responsive">
+        <table class="table align-middle">
+          <thead class="table-dark">
+            <tr class="align-middle">
+              <th scope="col">Chương trình</th>
+              <th scope="col" class="w-100">Cơ sở giáo dục</th>
+              <th scope="col" class="w-small">Năm</th>
+              <th scope="col">Nghị quyết</th>
+              <th scope="col" class="w-small">Giấy CN</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <!-- Dữ liệu sẽ được render bằng JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+      <nav aria-label="...">
+        <ul class="pagination" id="pagination">
+          <!-- JS sẽ tạo phân trang ở đây -->
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <img src="./assets/image/logo-footer.png" width="100%" />
+        <p>
+          Tòa nhà HT2, Khu đô thị Đại học Quốc gia Hà Nội, xã Hòa Lạc, thành
+          phố Hà Nội
+        </p>
+        <div class="d-flex gap-3 group-social">
+          <a href="#"><img src="./assets/icon/Facebook.svg" /></a>
+          <a href="#">
+            <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
+              <rect width="17.5" height="17.5" transform="translate(5.25 5.64032)" fill="currentColor" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.21875 7.60907H12.5869L14.2291 11.9403L12.4589 13.0191C13.064 14.1584 14.1595 15.3363 15.3246 15.9453L16.3997 14.1533L20.7812 15.8024V21.1716H20.1979C16.3815 21.1716 13.1282 19.8635 10.8275 17.5628C8.52685 15.2621 7.21875 12.0088 7.21875 8.1924V7.60907ZM8.39649 8.77574C8.52205 12.0595 9.70918 14.7946 11.6525 16.7379C13.5958 18.6811 16.3308 19.8683 19.6146 19.9938V16.6098L16.8995 15.588L15.8046 17.4128L15.3464 17.2352C13.5206 16.5276 11.8575 14.6667 11.1686 13.0194L10.9752 12.5571L12.7948 11.4482L11.7815 8.77574H8.39649Z"
+                fill="white" />
+            </svg>
+          </a>
+          <a href="#"><svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
+              <rect width="17.5" height="17.5" transform="translate(5.25 5.64032)" fill="currentColor" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M21.1471 8.70276H6.85547V20.0778H21.1471V8.70276ZM8.02214 10.4788V18.9111H19.9805V10.4787L14.0013 15.1292L8.02214 10.4788ZM18.8636 9.86943H9.139L14.0013 13.6512L18.8636 9.86943Z"
+                fill="white" />
+            </svg>
+          </a>
         </div>
       </div>
-      <script src="./assets/css/main.js"></script>
+      <div class="footer__bottom">
+        <p>© 2025 CEA - VNU Hanoi. All rights reserved.</p>
+        <div class="d-flex gap-4">
+          <a href="#">Privay Policy</a>
+          <a href="#">Term of Service</a>
+        </div>
+      </div>
     </div>
-  </body>
+    <script src="./assets/css/main.js"></script>
+    <script>
+      const data = [
+        { program: "Sport", university: "ĐH Văn Lang", year: 2025, resolution: "@NQ/0001" },
+        { program: "Math", university: "ĐH Lạc Hồng", year: 2025, resolution: "@NQ/0001" },
+        { program: "Physical", university: "ĐH Thủy Lợi", year: 2025, resolution: "@NQ/0001" },
+        { program: "Chemistry", university: "ĐH Bách Khoa", year: 2024, resolution: "@NQ/0001" },
+        { program: "Biology", university: "ĐH Sư Phạm", year: 2023, resolution: "@NQ/0001" },
+        { program: "English", university: "ĐH Ngoại Ngữ", year: 2023, resolution: "@NQ/0001" },
+        { program: "IT", university: "ĐH CNTT", year: 2025, resolution: "@NQ/0001" },
+        { program: "History", university: "ĐH KHXHNV", year: 2025, resolution: "@NQ/0001" },
+        { program: "Design", university: "ĐH Mỹ Thuật", year: 2025, resolution: "@NQ/00091" },
+        { program: "Sport", university: "ĐH Văn Lang", year: 2025, resolution: "@NQ/0001" },
+        { program: "Math", university: "ĐH Lạc Hồng", year: 2025, resolution: "@NQ/0001" },
+        { program: "Physical", university: "ĐH Thủy Lợi", year: 2025, resolution: "@NQ/00031" },
+        { program: "Chemistry", university: "ĐH Bách Khoa", year: 2024, resolution: "@NQ/0001" },
+        { program: "Biology", university: "ĐH Sư Phạm", year: 2023, resolution: "@NQ/0001" },
+        { program: "English", university: "ĐH Ngoại Ngữ", year: 2023, resolution: "@NQ/0001" },
+        { program: "IT", university: "ĐH CNTT", year: 2025, resolution: "@NQ/0001" },
+        { program: "History", university: "ĐH KHXHNV", year: 2025, resolution: "@NQ/0001" },
+        { program: "Design", university: "ĐH Mỹ Thuật", year: 2025, resolution: "@NQ/0001" },
+        { program: "Sport", university: "ĐH Văn Lang", year: 2025, resolution: "@NQ/0001" },
+        { program: "Math", university: "ĐH Lạc Hồng", year: 2025, resolution: "@NQ/0001" },
+        { program: "Physical", university: "ĐH Thủy Lợi", year: 2025, resolution: "@NQ/0001" },
+        { program: "Chemistry", university: "ĐH Bách Khoa", year: 2024, resolution: "@NQ/0001" },
+        { program: "Biology", university: "ĐH Sư Phạm", year: 2023, resolution: "@NQ/0001" },
+        { program: "English", university: "ĐH Ngoại Ngữ", year: 2023, resolution: "@NQ/0001" },
+        { program: "IT", university: "ĐH CNTT", year: 2025, resolution: "@NQ/0001" },
+        { program: "History", university: "ĐH KHXHNV", year: 2025, resolution: "@NQ/0001" },
+        { program: "Design", university: "ĐH Mỹ Thuật", year: 2025, resolution: "@NQ/0001" },
+        { program: "Sport", university: "ĐH Văn Lang", year: 2025, resolution: "@NQ/0001" },
+        { program: "Math", university: "ĐH Lạc Hồng", year: 2025, resolution: "@NQ/00021" },
+        { program: "Physical", university: "ĐH Thủy Lợi", year: 2025, resolution: "@NQ/0001" },
+        { program: "Chemistry", university: "ĐH Bách Khoa", year: 2024, resolution: "@NQ/0001" },
+        { program: "Biology", university: "ĐH Sư Phạm", year: 2023, resolution: "@NQ/0001" },
+        { program: "English", university: "ĐH Ngoại Ngữ", year: 2023, resolution: "@NQ/0001" },
+        { program: "IT", university: "ĐH CNTT", year: 2025, resolution: "@NQ/0001" },
+        { program: "History", university: "ĐH KHXHNV", year: 2025, resolution: "@NQ/0001" },
+        { program: "Design", university: "ĐH Mỹ Thuật", year: 2025, resolution: "@NQ/0001" },
+      ];
+
+      const rowsPerPage = 9;
+      let currentPage = 1;
+
+      function renderTable(page) {
+        const tbody = document.getElementById("tableBody");
+        tbody.innerHTML = "";
+
+        const start = (page - 1) * rowsPerPage;
+        const end = start + rowsPerPage;
+        const pageItems = data.slice(start, end);
+
+        for (let item of pageItems) {
+          const row = `
+          <tr>
+            <td>${item.program}</td>
+            <td>${item.university}</td>
+            <td class="w-small">${item.year}</td>
+            <td>${item.resolution}</td>
+            <td class="w-small"><a href="#"><img class="pdf-icon" src="https://cdn-icons-png.flaticon.com/512/337/337946.png" /></a></td>
+          </tr>
+        `;
+          tbody.innerHTML += row;
+        }
+      }
+
+      function renderPagination() {
+        const pagination = document.getElementById("pagination");
+        pagination.innerHTML = "";
+
+        const totalPages = Math.ceil(data.length / rowsPerPage);
+        const maxVisible = 3;
+
+        const createButton = (page, label = null, disabled = false, isActive = false, isHTML = false, extraClass = '') => {
+          const btn = document.createElement("button");
+
+          if (isHTML) {
+            btn.innerHTML = label;
+          } else {
+            btn.textContent = label || page;
+          }
+
+          btn.classList.add('page-link'); // default class
+
+          if (extraClass) {
+            btn.classList.add(...extraClass.split(' ')); // hỗ trợ nhiều class
+          }
+
+          if (disabled) btn.disabled = true;
+          if (isActive) btn.classList.add("active");
+
+          btn.addEventListener("click", () => {
+            currentPage = page;
+            renderTable(currentPage);
+            renderPagination();
+          });
+
+          return btn;
+        };
+
+        // Prev button
+        pagination.appendChild(createButton(currentPage - 1, '<i class="bi bi-chevron-left"></i>', currentPage === 1, false, true));
+
+        // Always show first page
+        pagination.appendChild(createButton(1, "1", false, currentPage === 1));
+
+        // Left side dots
+        if (currentPage > 3) {
+          const dots = document.createElement("span");
+          dots.className = "page-dots";
+          dots.textContent = "…";
+          pagination.appendChild(dots);
+        }
+
+        // Middle pages
+        const startPage = Math.max(2, currentPage - 1);
+        const endPage = Math.min(totalPages - 1, currentPage + 1);
+
+        for (let i = startPage; i <= endPage; i++) {
+          pagination.appendChild(createButton(i, i, false, currentPage === i));
+        }
+
+        // Right side dots
+        if (currentPage < totalPages - 2) {
+          const dots = document.createElement("span");
+          dots.className = "page-dots";
+          dots.textContent = "…";
+          pagination.appendChild(dots);
+        }
+
+        // Last page
+        if (totalPages > 1) {
+          pagination.appendChild(createButton(totalPages, totalPages, false, currentPage === totalPages));
+        }
+
+        // Next button
+        pagination.appendChild(createButton(currentPage + 1, '<i class="bi bi-chevron-right"></i>', currentPage === totalPages, false, true));
+      }
+
+      // Init
+      document.addEventListener("DOMContentLoaded", () => {
+        renderTable(currentPage);
+        renderPagination();
+      });
+    </script>
+  </div>
+</body>
+
 </html>

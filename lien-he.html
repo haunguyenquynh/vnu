@@ -42,7 +42,7 @@
     <header class="header">
       <div class="header-container container">
         <a class="logo-brand" href="./index.html"
-          ><img src="./assets/image/logo.png" alt="menu"
+          ><img src="./assets/image/logo.svg" alt="menu"
         /></a>
         <div class="header-container__content">
           <div class="header-container__right">
@@ -114,16 +114,12 @@
               <i class="bi bi-list"></i>
             </button>
           </div>
-          <form class="d-flex form-search">
-            <button class="btn btn-outline-success" type="submit">
+          <form class="d-flex flex-row-reverse form-search" action="tim-kiem.html" method="GET" id="searchForm">
+            <button class="btn btn-search-icon" type="submit">
               <img src="./assets/icon/search.png" />
             </button>
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Tìm kiếm tất cả"
-              aria-label="Search"
-            />
+            <input class="form-control" type="search" placeholder="Tìm kiếm tất cả" aria-label="Search" id="searchInput"
+              name="q" />
           </form>
         </div>
       </div>
@@ -287,6 +283,7 @@
                   aria-label="email"
                 />
                 <textarea
+                  maxlength="200"
                   class="form-control"
                   type="text"
                   placeholder="Nội dung"

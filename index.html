@@ -42,7 +42,7 @@
     <header class="header">
       <div class="header-container container">
         <a class="logo-brand" href="./index.html"
-          ><img src="./assets/image/logo.png" alt="menu"
+          ><img src="./assets/image/logo.svg" alt="menu"
         /></a>
         <div class="header-container__content">
           <div class="header-container__right">
@@ -114,19 +114,20 @@
               <i class="bi bi-list"></i>
             </button>
           </div>
-          <form class="d-flex form-search">
-            <a
-              class="btn btn-outline-success"
+          <form class="d-flex flex-row-reverse form-search" action="tim-kiem.html" method="GET" id="searchForm">
+            <button
+              class="btn btn-search-icon"
               type="submit"
-              href="tim-kiem.html"
             >
               <img src="./assets/icon/search.png" />
-            </a>
+            </button>
             <input
               class="form-control"
               type="search"
               placeholder="Tìm kiếm tất cả"
               aria-label="Search"
+              id="searchInput"
+              name="q"
             />
           </form>
         </div>
@@ -237,7 +238,7 @@
                 <img src="./assets/image/new1.jpg" />
                 <div class="content">
                   <div class="tag">Live</div>
-                  <a href="#" class="caroursel-title">
+                  <a href="./tin-tuc-chi-tiet.html" class="caroursel-title">
                     Đại học Quốc gia Hà Nội tham dự Hội nghị thường niên Mạng
                     lưới Quốc tế các tổ chức ĐBCLGD trong GDĐH (INQAAHE) 2025
                     tại Nhật Bản
@@ -248,7 +249,7 @@
                 <img src="./assets/image/new3.jpg" />
                 <div class="content">
                   <div class="tag">Live</div>
-                  <a href="#" class="caroursel-title">
+                  <a href="./tin-tuc-chi-tiet.html" class="caroursel-title">
                     Đại học Quốc gia Hà Nội tham dự Hội nghị thường niên Mạng
                     lưới Quốc tế các tổ chức ĐBCLGD trong GDĐH (INQAAHE) 2025
                     tại Nhật Bản
@@ -259,7 +260,7 @@
                 <img src="./assets/image/new4.jpg" />
                 <div class="content">
                   <div class="tag">Live</div>
-                  <a href="#" class="caroursel-title">
+                  <a href="./tin-tuc-chi-tiet.html" class="caroursel-title">
                     Đại học Quốc gia Hà Nội tham dự Hội nghị thường niên Mạng
                     lưới Quốc tế các tổ chức ĐBCLGD trong GDĐH (INQAAHE) 2025
                     tại Nhật Bản
@@ -272,32 +273,58 @@
         </div>
         <div class="section-1__right">
           <h2 class="title">thông báo mới</h2>
-          <ul class="list-group">
-            <li class="list-group-item d-flex align-items-start gap-3">
-              <img src="./assets/icon/notification.svg" />
-              <div class="content">
-                <div class="fw-600">Tập huấn ĐBCL</div>
-                Đảm bảo chất lượng cho các trường đại học trên địa bàn Thành phố
-                Hà Nội
-              </div>
-              <span class="tag">Mới</span>
-            </li>
-            <li class="list-group-item d-flex align-items-start gap-3">
-              <img src="./assets/icon/calendar.svg" />
-              <div class="content">
-                <div class="fw-600">Hội thảo khoa học</div>
-                Đối sánh chất lượng giáo dục Đại Học tại Việt Nam
-              </div>
-            </li>
-            <li class="list-group-item d-flex align-items-start gap-3">
-              <img src="./assets/icon/notification.svg" />
-              <div class="content">
-                <div class="fw-600">Tập huấn ĐBCL</div>
-                Đảm bảo chất lượng cho các trường đại học trên địa bàn Thành phố
-                Hà Nội
-              </div>
-            </li>
-          </ul>
+          <div class="scroll-posts">
+            <ul class="list-group">
+              <li class="list-group-item d-flex align-items-start gap-3">
+                <img src="./assets/icon/notification.svg" />
+                <div class="content">
+                  <div class="fw-600">Tập huấn ĐBCL</div>
+                  Đảm bảo chất lượng cho các trường đại học trên địa bàn Thành phố
+                  Hà Nội
+                </div>
+                <span class="tag">Mới</span>
+              </li>
+              <li class="list-group-item d-flex align-items-start gap-3">
+                <img src="./assets/icon/calendar.svg" />
+                <div class="content">
+                  <div class="fw-600">Hội thảo khoa học</div>
+                  Đối sánh chất lượng giáo dục Đại Học tại Việt Nam
+                </div>
+              </li>
+              <li class="list-group-item d-flex align-items-start gap-3">
+                <img src="./assets/icon/notification.svg" />
+                <div class="content">
+                  <div class="fw-600">Tập huấn ĐBCL</div>
+                  Đảm bảo chất lượng cho các trường đại học trên địa bàn Thành phố
+                  Hà Nội
+                </div>
+              </li>
+              <li class="list-group-item d-flex align-items-start gap-3">
+                <img src="./assets/icon/notification.svg" />
+                <div class="content">
+                  <div class="fw-600">Tập huấn ĐBCL</div>
+                  Đảm bảo chất lượng cho các trường đại học trên địa bàn Thành phố
+                  Hà Nội
+                </div>
+              </li>
+              <li class="list-group-item d-flex align-items-start gap-3">
+                <img src="./assets/icon/notification.svg" />
+                <div class="content">
+                  <div class="fw-600">Tập huấn ĐBCL</div>
+                  Đảm bảo chất lượng cho các trường đại học trên địa bàn Thành phố
+                  Hà Nội
+                </div>
+              </li>
+              <li class="list-group-item d-flex align-items-start gap-3">
+                <img src="./assets/icon/notification.svg" />
+                <div class="content">
+                  <div class="fw-600">Tập huấn ĐBCL</div>
+                  Đảm bảo chất lượng cho các trường đại học trên địa bàn Thành phố
+                  Hà Nội
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="section-2">
@@ -463,9 +490,11 @@
           <div class="section-4--content">
             <div class="section-4--content__left">
               <div class="blog-item">
-                <div class="blog-image">
-                  <img src="./assets/image/new1.jpg" />
-                </div>
+                <a href="./tin-tuc-chi-tiet.html">
+                  <div class="blog-image">
+                    <img src="./assets/image/new1.jpg" />
+                  </div>
+                </a>
                 <div class="content">
                   <div class="post-text">
                     <div class="categories"><span>Hội thảo</span></div>
@@ -487,9 +516,11 @@
             </div>
             <div class="section-4--content__right">
               <div class="blog-item">
-                <div class="blog-image">
-                  <img src="./assets/image/new3.jpg" />
-                </div>
+                <a href="./tin-tuc-chi-tiet.html">
+                  <div href="./tin-tuc-chi-tiet.html" class="blog-image">
+                    <img src="./assets/image/new3.jpg" />
+                  </div>
+                </a>
                 <div class="content">
                   <div class="post-text">
                     <div class="categories"><span>Hội thảo</span></div>
@@ -502,15 +533,17 @@
                       08:00 19/04/2025
                     </div>
                   </div>
-                  <a href="#">
+                  <a href="./tin-tuc-chi-tiet.html">
                     Tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá 48
                   </a>
                 </div>
               </div>
               <div class="blog-item">
-                <div class="blog-image">
-                  <img src="./assets/image/new3.jpg" />
-                </div>
+                <a href="./tin-tuc-chi-tiet.html">
+                  <div href="./tin-tuc-chi-tiet.html" class="blog-image">
+                    <img src="./assets/image/new3.jpg" />
+                  </div>
+                </a>
                 <div class="content">
                   <div class="post-text">
                     <div class="categories"><span>Hội thảo</span></div>
@@ -523,7 +556,7 @@
                       08:00 19/04/2025
                     </div>
                   </div>
-                  <a href="#">
+                  <a href="./tin-tuc-chi-tiet.html">
                     Tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá 48
                   </a>
                 </div>
@@ -534,9 +567,9 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="blog-item blog-item-horizontal">
-                  <div class="blog-image">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
                     <img src="./assets/image/new3.jpg" />
-                  </div>
+                  </a>
                   <div class="content">
                     <div class="post-text">
                       <div class="categories">
@@ -544,7 +577,7 @@
                       </div>
                       <div class="time">08:00 19/04/2025</div>
                     </div>
-                    <a href="#">
+                    <a href="./tin-tuc-chi-tiet.html">
                       Tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá 48
                     </a>
                   </div>
@@ -552,15 +585,15 @@
               </div>
               <div class="swiper-slide">
                 <div class="blog-item blog-item-horizontal">
-                  <div class="blog-image">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
                     <img src="./assets/image/new4.jpg" />
-                  </div>
+                  </a>
                   <div class="content">
                     <div class="post-text">
                       <div class="categories"><span>Kết quả</span></div>
                       <div class="time">08:00 19/04/2025</div>
                     </div>
-                    <a href="#">
+                    <a href="./tin-tuc-chi-tiet.html">
                       Tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá 48
                     </a>
                   </div>
@@ -568,15 +601,15 @@
               </div>
               <div class="swiper-slide">
                 <div class="blog-item blog-item-horizontal">
-                  <div class="blog-image">
+                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
                     <img src="./assets/image/new5.jpg" />
-                  </div>
+                  </a>
                   <div class="content">
                     <div class="post-text">
                       <div class="categories"><span>Tập huấn</span></div>
                       <div class="time">08:00 19/04/2025</div>
                     </div>
-                    <a href="#">
+                    <a href="./tin-tuc-chi-tiet.html">
                       Thông báo tổ chức tập huấn nghiệp vụ kiểm định viên toàn
                       Việt Nam
                     </a>
