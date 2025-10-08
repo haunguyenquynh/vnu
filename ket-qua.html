@@ -28,7 +28,7 @@
 <body>
   <header class="header">
     <div class="header-container container">
-      <a class="logo-brand" href="./index.html"><img src="./assets/image/logo.svg" alt="menu" /></a>
+      <a class="logo-brand" href="./index.html"><img src="./assets/image/logo.png" alt="menu" /></a>
       <div class="header-container__content">
         <div class="header-container__right">
           <div class="d-flex gap-3 group-social">
@@ -172,31 +172,31 @@
         </nav>
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab">
-            <form class="d-flex form">
+            <form class="d-flex form" id="searchForm2">
               <div class="form-search">
                 <img src="./assets/icon/search.png" />
                 <input class="form-control ms-2" type="search"
-                  placeholder="Chương trình đào tạo, Trường Đại học và Cao Đẳng" aria-label="Search" />
+                  placeholder="Chương trình đào tạo, Trường Đại học và Cao Đẳng" aria-label="Search" id="searchInput2" name="r" />
               </div>
               <button class="btn btn-success" type="submit">Tìm kiếm</button>
             </form>
           </div>
           <div class="tab-pane fade" id="nav-university" role="tabpanel" aria-labelledby="nav-university-tab">
-            <form class="d-flex form">
+            <form class="d-flex form" id="searchForm2">
               <div class="form-search">
                 <img src="./assets/icon/search.png" />
                 <input class="form-control ms-2" type="search"
-                  placeholder="Chương trình đào tạo, Trường Đại học và Cao Đẳng" aria-label="Search" />
+                  placeholder="Chương trình đào tạo, Trường Đại học và Cao Đẳng" aria-label="Search" id="searchInput2" name="r" />
               </div>
               <button class="btn btn-success" type="submit">Tìm kiếm</button>
             </form>
           </div>
           <div class="tab-pane fade" id="nav-college" role="tabpanel" aria-labelledby="nav-college-tab">
-            <form class="d-flex form">
+            <form class="d-flex form" id="searchForm2">
               <div class="form-search">
                 <img src="./assets/icon/search.png" />
                 <input class="form-control ms-2" type="search"
-                  placeholder="Chương trình đào tạo, Trường Đại học và Cao Đẳng" aria-label="Search" />
+                  placeholder="Chương trình đào tạo, Trường Đại học và Cao Đẳng" aria-label="Search" id="searchInput2" name="r" />
               </div>
               <button class="btn btn-success" type="submit">Tìm kiếm</button>
             </form>
@@ -204,7 +204,7 @@
         </div>
       </div>
       <h2 class="title-page">CHƯƠNG TRÌNH ĐÀO TẠO</h2>
-      <p class="show-result">Tìm kiếm cho: <strong>KD <span class="px-2">|</span></strong> 30 kết quả</p>
+      <p class="show-result">Tìm kiếm cho: <strong><span id="searchKeyword2">KD</span> <span class="px-2">|</span></strong> 30 kết quả</p>
       <div class="table-responsive">
         <table class="table align-middle">
           <thead class="table-dark">

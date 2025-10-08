@@ -1047,7 +1047,8 @@
   .table .w-larger {
     width: 117px;
     min-width: 117px;
-    padding: 16px 8px; }
+    padding: 16px 8px;
+    text-align: center; }
   .table .w-smaller {
     width: 110px;
     min-width: 100px;

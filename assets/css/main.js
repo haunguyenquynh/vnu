@@ -110,18 +110,32 @@ tabBtns.forEach(btn => {
 });
 
 
-const params = new URLSearchParams(window.location.search);
-const keyword = params.get('q');
+document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const q = params.get("q");
+  const r = params.get("r");
 
-if (keyword) {
-  // Show keyword in result line
-  document.getElementById('searchKeyword').textContent = keyword;
+  const setText = (id, text) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = text;
+  };
 
-  // Optional: prefill the search bar if it also exists on this page
-  const input = document.getElementById('searchInput');
-  if (input) input.value = keyword;
+  const setValue = (id, val) => {
+    const el = document.getElementById(id);
+    if (el) el.value = val;
+  };
 
-  // Optional: filter results by keyword here
-} else {
-  document.getElementById('searchKeyword').textContent = "Không có từ khóa";
-}
+  // Nếu có ít nhất 1 trong 2 tham số
+  if (q || r) {
+    setText("searchKeyword", q || r);  // ưu tiên q
+    setText("searchKeyword2", r || q); // ưu tiên r
+
+    // Gán vào input (nếu có)
+    setValue("searchInput", q || "");
+    setValue("searchInput2", r || "");
+  } else {
+    setText("searchKeyword", "Không có từ khóa");
+    setText("searchKeyword2", "Không có từ khóa");
+  }
+});
+
