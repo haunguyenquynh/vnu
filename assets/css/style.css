@@ -805,6 +805,10 @@
   max-width: 1130px;
   margin: 0 auto; }
 
+.m-w-1034 {
+  max-width: 1034px;
+  margin: 0 auto; }
+
 .single-blog .breadcrumb-detail {
   display: flex;
   flex-wrap: wrap;

@@ -489,7 +489,6 @@ $active: #32216f;
       }
 
       .list-group {
-
         .list-group-item {
           background: #f5fbf9;
           border: 0;
@@ -1139,7 +1138,10 @@ $active: #32216f;
     margin: 0 auto;
   }
 }
-
+.m-w-1034 {
+  max-width: 1034px;
+  margin: 0 auto;
+}
 .single-blog {
   .breadcrumb-detail {
     display: flex;
@@ -1207,10 +1209,10 @@ $active: #32216f;
       flex: 1;
       max-width: 373px;
     }
-    .widget-blog{
+    .widget-blog {
       height: 661px;
       overflow: hidden;
-      .widget-blog-scroll{
+      .widget-blog-scroll {
         .blog-item.blog-item-horizontal {
           margin-bottom: 32px;
         }
@@ -1851,6 +1853,6 @@ $active: #32216f;
     height: 20px;
   }
 }
-.mb-32{
+.mb-32 {
   margin-bottom: 32px !important;
 }

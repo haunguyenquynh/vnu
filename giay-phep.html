@@ -152,7 +152,7 @@
       <h2>DANH SÁCH VĂN BẢN</h2>
       <h3 class="introduce-text">30 kết quả</h3>
       <div class="table-responsive">
-        <table class="table align-middle">
+        <table class="table align-middle" id="table1">
           <thead class="table-dark">
             <tr class="align-middle">
               <th scope="col">Chương trình</th>
@@ -162,17 +162,14 @@
               <th scope="col" class="w-small">Giấy CN</th>
             </tr>
           </thead>
-          <tbody id="tableBody">
-            <!-- Dữ liệu sẽ được render bằng JavaScript -->
-          </tbody>
+          <tbody id="tableBody"></tbody>
         </table>
       </div>
 
       <nav aria-label="...">
-        <ul class="pagination" id="pagination">
-          <!-- JS sẽ tạo phân trang ở đây -->
-        </ul>
+        <ul class="pagination" id="pagination1"></ul>
       </nav>
+      <script src="./assets/css/table.js"></script>
     </div>
   </div>
   <div class="footer">
@@ -213,152 +210,6 @@
       </div>
     </div>
     <script src="./assets/css/main.js"></script>
-    <script>
-      const data = [
-        { program: "Sport", university: "ĐH Văn Lang", year: 2025, resolution: "@NQ/0001" },
-        { program: "Math", university: "ĐH Lạc Hồng", year: 2025, resolution: "@NQ/0001" },
-        { program: "Physical", university: "ĐH Thủy Lợi", year: 2025, resolution: "@NQ/0001" },
-        { program: "Chemistry", university: "ĐH Bách Khoa", year: 2024, resolution: "@NQ/0001" },
-        { program: "Biology", university: "ĐH Sư Phạm", year: 2023, resolution: "@NQ/0001" },
-        { program: "English", university: "ĐH Ngoại Ngữ", year: 2023, resolution: "@NQ/0001" },
-        { program: "IT", university: "ĐH CNTT", year: 2025, resolution: "@NQ/0001" },
-        { program: "History", university: "ĐH KHXHNV", year: 2025, resolution: "@NQ/0001" },
-        { program: "Design", university: "ĐH Mỹ Thuật", year: 2025, resolution: "@NQ/00091" },
-        { program: "Sport", university: "ĐH Văn Lang", year: 2025, resolution: "@NQ/0001" },
-        { program: "Math", university: "ĐH Lạc Hồng", year: 2025, resolution: "@NQ/0001" },
-        { program: "Physical", university: "ĐH Thủy Lợi", year: 2025, resolution: "@NQ/00031" },
-        { program: "Chemistry", university: "ĐH Bách Khoa", year: 2024, resolution: "@NQ/0001" },
-        { program: "Biology", university: "ĐH Sư Phạm", year: 2023, resolution: "@NQ/0001" },
-        { program: "English", university: "ĐH Ngoại Ngữ", year: 2023, resolution: "@NQ/0001" },
-        { program: "IT", university: "ĐH CNTT", year: 2025, resolution: "@NQ/0001" },
-        { program: "History", university: "ĐH KHXHNV", year: 2025, resolution: "@NQ/0001" },
-        { program: "Design", university: "ĐH Mỹ Thuật", year: 2025, resolution: "@NQ/0001" },
-        { program: "Sport", university: "ĐH Văn Lang", year: 2025, resolution: "@NQ/0001" },
-        { program: "Math", university: "ĐH Lạc Hồng", year: 2025, resolution: "@NQ/0001" },
-        { program: "Physical", university: "ĐH Thủy Lợi", year: 2025, resolution: "@NQ/0001" },
-        { program: "Chemistry", university: "ĐH Bách Khoa", year: 2024, resolution: "@NQ/0001" },
-        { program: "Biology", university: "ĐH Sư Phạm", year: 2023, resolution: "@NQ/0001" },
-        { program: "English", university: "ĐH Ngoại Ngữ", year: 2023, resolution: "@NQ/0001" },
-        { program: "IT", university: "ĐH CNTT", year: 2025, resolution: "@NQ/0001" },
-        { program: "History", university: "ĐH KHXHNV", year: 2025, resolution: "@NQ/0001" },
-        { program: "Design", university: "ĐH Mỹ Thuật", year: 2025, resolution: "@NQ/0001" },
-        { program: "Sport", university: "ĐH Văn Lang", year: 2025, resolution: "@NQ/0001" },
-        { program: "Math", university: "ĐH Lạc Hồng", year: 2025, resolution: "@NQ/00021" },
-        { program: "Physical", university: "ĐH Thủy Lợi", year: 2025, resolution: "@NQ/0001" },
-        { program: "Chemistry", university: "ĐH Bách Khoa", year: 2024, resolution: "@NQ/0001" },
-        { program: "Biology", university: "ĐH Sư Phạm", year: 2023, resolution: "@NQ/0001" },
-        { program: "English", university: "ĐH Ngoại Ngữ", year: 2023, resolution: "@NQ/0001" },
-        { program: "IT", university: "ĐH CNTT", year: 2025, resolution: "@NQ/0001" },
-        { program: "History", university: "ĐH KHXHNV", year: 2025, resolution: "@NQ/0001" },
-        { program: "Design", university: "ĐH Mỹ Thuật", year: 2025, resolution: "@NQ/0001" },
-      ];
-
-      const rowsPerPage = 9;
-      let currentPage = 1;
-
-      function renderTable(page) {
-        const tbody = document.getElementById("tableBody");
-        tbody.innerHTML = "";
-
-        const start = (page - 1) * rowsPerPage;
-        const end = start + rowsPerPage;
-        const pageItems = data.slice(start, end);
-
-        for (let item of pageItems) {
-          const row = `
-          <tr>
-            <td>${item.program}</td>
-            <td>${item.university}</td>
-            <td class="w-small">${item.year}</td>
-            <td>${item.resolution}</td>
-            <td class="w-small"><a href="#"><img class="pdf-icon" src="https://cdn-icons-png.flaticon.com/512/337/337946.png" /></a></td>
-          </tr>
-        `;
-          tbody.innerHTML += row;
-        }
-      }
-
-      function renderPagination() {
-        const pagination = document.getElementById("pagination");
-        pagination.innerHTML = "";
-
-        const totalPages = Math.ceil(data.length / rowsPerPage);
-        const maxVisible = 3;
-
-        const createButton = (page, label = null, disabled = false, isActive = false, isHTML = false, extraClass = '') => {
-          const btn = document.createElement("button");
-
-          if (isHTML) {
-            btn.innerHTML = label;
-          } else {
-            btn.textContent = label || page;
-          }
-
-          btn.classList.add('page-link'); // default class
-
-          if (extraClass) {
-            btn.classList.add(...extraClass.split(' ')); // hỗ trợ nhiều class
-          }
-
-          if (disabled) btn.disabled = true;
-          if (isActive) btn.classList.add("active");
-
-          btn.addEventListener("click", () => {
-            currentPage = page;
-            renderTable(currentPage);
-            renderPagination();
-          });
-
-          return btn;
-        };
-
-
-        // Prev button
-        pagination.appendChild(createButton(currentPage - 1, '<i class="bi bi-chevron-left"></i>', currentPage === 1, false, true));
-
-        // Always show first page
-        pagination.appendChild(createButton(1, "1", false, currentPage === 1));
-
-        // Left side dots
-        if (currentPage > 3) {
-          const dots = document.createElement("span");
-          dots.className = "page-dots";
-          dots.textContent = "…";
-          pagination.appendChild(dots);
-        }
-
-        // Middle pages
-        const startPage = Math.max(2, currentPage - 1);
-        const endPage = Math.min(totalPages - 1, currentPage + 1);
-
-        for (let i = startPage; i <= endPage; i++) {
-          pagination.appendChild(createButton(i, i, false, currentPage === i));
-        }
-
-        // Right side dots
-        if (currentPage < totalPages - 2) {
-          const dots = document.createElement("span");
-          dots.className = "page-dots";
-          dots.textContent = "…";
-          pagination.appendChild(dots);
-        }
-
-        // Last page
-        if (totalPages > 1) {
-          pagination.appendChild(createButton(totalPages, totalPages, false, currentPage === totalPages));
-        }
-
-        // Next button
-        pagination.appendChild(createButton(currentPage + 1, '<i class="bi bi-chevron-right"></i>', currentPage === totalPages, false, true));
-      }
-
-      // Init
-      document.addEventListener("DOMContentLoaded", () => {
-        renderTable(currentPage);
-        renderPagination();
-      });
-    </script>
   </div>
 </body>
-
 </html>
