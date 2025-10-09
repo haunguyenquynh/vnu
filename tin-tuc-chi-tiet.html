@@ -1,360 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <link href="./assets/css/common.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
-  <link href="./assets/css/common.css" rel="stylesheet" />
-  <link href="./assets/css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <title>Tin Tức</title>
+  </head>
 
-  <title>Tin Tức</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="header-container container">
-      <a class="logo-brand" href="./index.html"><img src="./assets/image/logo.png" alt="menu" /></a>
-      <div class="header-container__content">
-        <div class="header-container__right">
-          <div class="d-flex gap-3 group-social">
-            <a href="#"><img src="./assets/icon/Facebook.svg" /></a>
-            <a href="#">
-              <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
-                <rect width="17.5" height="17.5" transform="translate(5.25 5.64032)" fill="currentColor" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M7.21875 7.60907H12.5869L14.2291 11.9403L12.4589 13.0191C13.064 14.1584 14.1595 15.3363 15.3246 15.9453L16.3997 14.1533L20.7812 15.8024V21.1716H20.1979C16.3815 21.1716 13.1282 19.8635 10.8275 17.5628C8.52685 15.2621 7.21875 12.0088 7.21875 8.1924V7.60907ZM8.39649 8.77574C8.52205 12.0595 9.70918 14.7946 11.6525 16.7379C13.5958 18.6811 16.3308 19.8683 19.6146 19.9938V16.6098L16.8995 15.588L15.8046 17.4128L15.3464 17.2352C13.5206 16.5276 11.8575 14.6667 11.1686 13.0194L10.9752 12.5571L12.7948 11.4482L11.7815 8.77574H8.39649Z"
-                  fill="white" />
-              </svg>
-            </a>
-            <a href="#"><svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
-                <rect width="17.5" height="17.5" transform="translate(5.25 5.64032)" fill="currentColor" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M21.1471 8.70276H6.85547V20.0778H21.1471V8.70276ZM8.02214 10.4788V18.9111H19.9805V10.4787L14.0013 15.1292L8.02214 10.4788ZM18.8636 9.86943H9.139L14.0013 13.6512L18.8636 9.86943Z"
-                  fill="white" />
-              </svg>
-            </a>
-          </div>
-          <div class="d-flex gap-2">
-            <button class="btn" type="button">
-              <img src="./assets/image/flag.png" />
+  <body>
+    <header class="header">
+      <div class="header-container container">
+        <a class="logo-brand" href="./index.html"
+          ><img src="./assets/image/logo.png" alt="menu"
+        /></a>
+        <div class="header-container__content">
+          <div class="header-container__right">
+            <div class="d-flex gap-3 group-social">
+              <a href="#"><img src="./assets/icon/Facebook.svg" /></a>
+              <a href="#">
+                <svg
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
+                  <rect
+                    width="17.5"
+                    height="17.5"
+                    transform="translate(5.25 5.64032)"
+                    fill="currentColor"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.21875 7.60907H12.5869L14.2291 11.9403L12.4589 13.0191C13.064 14.1584 14.1595 15.3363 15.3246 15.9453L16.3997 14.1533L20.7812 15.8024V21.1716H20.1979C16.3815 21.1716 13.1282 19.8635 10.8275 17.5628C8.52685 15.2621 7.21875 12.0088 7.21875 8.1924V7.60907ZM8.39649 8.77574C8.52205 12.0595 9.70918 14.7946 11.6525 16.7379C13.5958 18.6811 16.3308 19.8683 19.6146 19.9938V16.6098L16.8995 15.588L15.8046 17.4128L15.3464 17.2352C13.5206 16.5276 11.8575 14.6667 11.1686 13.0194L10.9752 12.5571L12.7948 11.4482L11.7815 8.77574H8.39649Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a href="#"
+                ><svg
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
+                  <rect
+                    width="17.5"
+                    height="17.5"
+                    transform="translate(5.25 5.64032)"
+                    fill="currentColor"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.1471 8.70276H6.85547V20.0778H21.1471V8.70276ZM8.02214 10.4788V18.9111H19.9805V10.4787L14.0013 15.1292L8.02214 10.4788ZM18.8636 9.86943H9.139L14.0013 13.6512L18.8636 9.86943Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="d-flex gap-2">
+              <button class="btn" type="button">
+                <img src="./assets/image/flag.png" />
+              </button>
+              <button class="btn" type="button">
+                <img src="./assets/image/flags.png" />
+              </button>
+            </div>
+            <button
+              class="navbar-toggler p-0 border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbarDark"
+              aria-controls="offcanvasNavbarDark"
+              aria-label="Toggle navigation"
+            >
+              <i class="bi bi-list"></i>
             </button>
-            <button class="btn" type="button">
-              <img src="./assets/image/flags.png" />
+          </div>
+          <form
+            class="d-flex flex-row-reverse form-search"
+            action="tim-kiem.html"
+            method="GET"
+            id="searchForm"
+          >
+            <button class="btn btn-search-icon" type="submit">
+              <img src="./assets/icon/search.png" />
             </button>
-          </div>
-          <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark" aria-label="Toggle navigation">
-            <i class="bi bi-list"></i>
-          </button>
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Tìm kiếm tất cả"
+              aria-label="Search"
+              id="searchInput"
+              name="q"
+            />
+          </form>
         </div>
-        <form class="d-flex flex-row-reverse form-search" action="tim-kiem.html" method="GET" id="searchForm">
-          <button class="btn btn-search-icon" type="submit">
-            <img src="./assets/icon/search.png" />
+      </div>
+      <div class="header-bottom">
+        <div class="navbar-toggler">
+          <button
+            class="p-0 border-0 btn-menu"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbarDark"
+            aria-controls="offcanvasNavbarDark"
+            aria-label="Toggle navigation"
+          >
+            Menu
           </button>
-          <input class="form-control" type="search" placeholder="Tìm kiếm tất cả" aria-label="Search" id="searchInput"
-            name="q" />
-        </form>
-      </div>
-    </div>
-    <div class="header-bottom">
-      <div class="navbar-toggler">
-        <button class="p-0 border-0 btn-menu" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark" aria-label="Toggle navigation">
-          Menu
-        </button>
-        <a href="./tim-kiem.html">Tìm kiếm</a>
-        <a href="./lien-he.html">Liên hệ</a>
-      </div>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbarDark"
-            aria-labelledby="offcanvasNavbarDarkLabel">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarMenu1" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Giới thiệu
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarMenu1">
-                  <li>
-                    <a class="link-item" href="./gioi-thieu.html">Giới thiệu chung</a>
-                  </li>
-                  <li>
-                    <a class="link-item" href="./gioi-thieu.html">Sứ mệnh tầm nhìn</a>
-                  </li>
-                  <li>
-                    <a class="link-item" href="./gioi-thieu.html">Cơ cấu tổ chức</a>
-                  </li>
-                  <li>
-                    <a class="link-item" href="./gioi-thieu.html">Hội đồng kiểm định</a>
-                  </li>
-                  <li>
-                    <a class="link-item" href="./gioi-thieu.html">Quy chế hoạt động</a>
-                  </li>
-                  <li>
-                    <a class="link-item" href="./gioi-thieu.html">Chiến lược phát triển</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./quy-trinh.html">
-                  QUY TRÌNH KĐCLGD
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./ket-qua.html"> KẾT QUẢ KĐCLGD </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./dao-tao.html"> ĐÀO TẠO KĐV </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./tap-huan.html"> TẬP HUẤN ĐBCL </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./doi-tac.html"> HỢP TÁC </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./tai-lieu.html"> TÀI LIỆU </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./lien-he.html"> LIÊN HỆ </a>
-              </li>
-            </ul>
-          </div>
+          <a href="./tim-kiem.html">Tìm kiếm</a>
+          <a href="./lien-he.html">Liên hệ</a>
         </div>
-      </nav>
-    </div>
-  </header>
-  <nav aria-label="breadcrumb" class="breadcrumb-content">
-    <div class="container">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item active" aria-current="page">Tin Tức</li>
-      </ol>
-    </div>
-  </nav>
-  <div class="single-blog container">
-    <h1>Tin tức về CEA-VNU</h1>
-    <nav style="--bs-breadcrumb-divider: '|'" aria-label="breadcrumb">
-      <ol class="breadcrumb-detail">
-        <li class="breadcrumb-item"><a href="#">Nổi bật</a></li>
-        <li class="breadcrumb-item active" aria-current="page">
-          Tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá 48
-        </li>
-      </ol>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbarDark"
+              aria-labelledby="offcanvasNavbarDarkLabel"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarMenu1"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Giới thiệu
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarMenu1">
+                    <li>
+                      <a class="link-item" href="./gioi-thieu.html"
+                        >Giới thiệu chung</a
+                      >
+                    </li>
+                    <li>
+                      <a class="link-item" href="./gioi-thieu.html"
+                        >Sứ mệnh tầm nhìn</a
+                      >
+                    </li>
+                    <li>
+                      <a class="link-item" href="./gioi-thieu.html"
+                        >Cơ cấu tổ chức</a
+                      >
+                    </li>
+                    <li>
+                      <a class="link-item" href="./gioi-thieu.html"
+                        >Hội đồng kiểm định</a
+                      >
+                    </li>
+                    <li>
+                      <a class="link-item" href="./gioi-thieu.html"
+                        >Quy chế hoạt động</a
+                      >
+                    </li>
+                    <li>
+                      <a class="link-item" href="./gioi-thieu.html"
+                        >Chiến lược phát triển</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./quy-trinh.html">
+                    QUY TRÌNH KĐCLGD
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./ket-qua.html"> KẾT QUẢ KĐCLGD </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./dao-tao.html"> ĐÀO TẠO KĐV </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./tap-huan.html"> TẬP HUẤN ĐBCL </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./doi-tac.html"> HỢP TÁC </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./tai-lieu.html"> TÀI LIỆU </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./lien-he.html"> LIÊN HỆ </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <nav aria-label="breadcrumb" class="breadcrumb-content">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Tin Tức</li>
+        </ol>
+      </div>
     </nav>
-    <div class="single-blog__content">
-      <div class="single-blog__content--left">
-        <h2>
-          Tọa đàm - Tập huấn “Đánh giá nguồn tài nguyên học liệu mở của thư
-          viện cơ sở giáo dục đại học: Vấn đề và giải pháp”
-        </h2>
-        <div class="detail">
-          <p>
-            Là một đại học hàng đầu của đất nước có kinh nghiệm và thế mạnh
-            trong lĩnh vực bảo đảm và kiểm định chất lượng giáo dục, năm 2013
-            Đại học Quốc gia Hà Nội (ĐHQGHN) được Bộ Giáo dục và Đào tạo (Bộ
-            GDĐT) giao xây dựng đề án thành lập trung tâm kiểm định chất lượng
-            giáo dục.
-          </p>
-          <img src="./assets/image/new1.jpg" width="100%" />
-          <p>
-            lượng giáo dục - ĐHQGHN (Trung tâm) đánh dấu sự ra đời của một
-            trung tâm kiểm định chất lượng giáo dục đầu tiên tại Việt Nam.
-          </p>
-          <p class="text-indent-2">
-            Trung tâm là đơn vị sự nghiệp công lập có tư cách pháp nhân được
-            giao chức năng kiểm định chất lượng giáo dục (KĐCLGD) đối với các
-            CSGD ngoài ĐHQGHN, tư vấn đảm bảo và cải tiến chất lượng đồng thời
-            tổ chức đào tạo và bồi dưỡng nghiệp vụ về kiểm định chất lượng
-            giáo dục.
-          </p>
-          <p class="text-indent-2">
-            Kể từ khi Bộ trưởng Bộ GDĐT có quyết định bổ nhiệm Giám đốc vào
-            tháng 12 năm 2013 và cấp phép hoạt động vào tháng 11 năm 2014,
-            Trung tâm đã xây dựng, triển khai chiến lược phát triển và các kế
-            hoạch trung hạn, hằng năm để thực hiện tốt sứ mạng của mình, góp
-            phần đáng kể vào phát triển hệ thống KĐCLGD và xây dựng văn hóa
-            chất lượng trong các CSGD đại học và trường cao đẳng tại Việt Nam.
-          </p>
-          <p class="text-indent-2">
-            Sau 11 năm hoạt động, năm 2025 đã ghi nhận dấu mốc chuyển biến
-            quan trọng về thể chế và tổ chức của Trung tâm theo cơ chế tự chủ
-            toàn diện với sự công nhận Hội đồng quản lý bởi cơ quan có thẩm
-            quyền . Với mô hình quản trị hiện đại, chuyên nghiệp và minh bạch,
-            Trung tâm tiếp tục khẳng định vai trò trong hệ thống giáo dục đại
-            học và đang hiện thực hóa tầm nhìn trở thành tổ chức kiểm định
-            hàng đầu tại Việt Nam, có uy tín trong khu vực và quốc tế.
-          </p>
-          <img src="./assets/image/single-blog.jpg" width="100%" />
-          <p>Một số danh hiệu đã được ghi nhận, khen thưởng</p>
-          <p class="text-indent-2">
-            Trung tâm đạt các danh hiệu như: Tập thể lao động xuất sắc trong
-            nhiều năm; Cờ thi đua của ĐHQGHN trong các năm 2022, 2023; Bằng
-            khen của Giám đốc ĐHQGHN các năm 2019, 2023; Bằng khen của Bộ
-            trưởng Bộ GDĐT về thành tích xuất sắc trong quá trình 15 năm xây
-            dựng và phát triển hệ thống bảo đảm và KĐCLGD; Bằng khen Bộ trưởng
-            Bộ GDĐT về thành tích xuất sắc trong xây dựng và phát triển Trung
-            tâm vào năm 2023. Công đoàn Trung tâm được đánh giá là Công đoàn
-            cơ sở vững mạnh, được nhận Bằng khen của Công đoàn Giáo dục Việt
-            Nam năm 2023.
-          </p>
+    <div class="single-blog container">
+      <h1>Tin tức về CEA-VNU</h1>
+      <nav style="--bs-breadcrumb-divider: '|'" aria-label="breadcrumb">
+        <ol class="breadcrumb-detail">
+          <li class="breadcrumb-item"><a href="#">Nổi bật</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá 48
+          </li>
+        </ol>
+      </nav>
+      <div class="single-blog__content">
+        <div class="single-blog__content--left">
+          <h2>
+            Tọa đàm - Tập huấn “Đánh giá nguồn tài nguyên học liệu mở của thư
+            viện cơ sở giáo dục đại học: Vấn đề và giải pháp”
+          </h2>
+          <div class="detail">
+            <p>
+              Là một đại học hàng đầu của đất nước có kinh nghiệm và thế mạnh
+              trong lĩnh vực bảo đảm và kiểm định chất lượng giáo dục, năm 2013
+              Đại học Quốc gia Hà Nội (ĐHQGHN) được Bộ Giáo dục và Đào tạo (Bộ
+              GDĐT) giao xây dựng đề án thành lập trung tâm kiểm định chất lượng
+              giáo dục.
+            </p>
+            <img src="./assets/image/new1.jpg" width="100%" />
+            <p>
+              lượng giáo dục - ĐHQGHN (Trung tâm) đánh dấu sự ra đời của một
+              trung tâm kiểm định chất lượng giáo dục đầu tiên tại Việt Nam.
+            </p>
+            <p class="text-indent-2">
+              Trung tâm là đơn vị sự nghiệp công lập có tư cách pháp nhân được
+              giao chức năng kiểm định chất lượng giáo dục (KĐCLGD) đối với các
+              CSGD ngoài ĐHQGHN, tư vấn đảm bảo và cải tiến chất lượng đồng thời
+              tổ chức đào tạo và bồi dưỡng nghiệp vụ về kiểm định chất lượng
+              giáo dục.
+            </p>
+            <p class="text-indent-2">
+              Kể từ khi Bộ trưởng Bộ GDĐT có quyết định bổ nhiệm Giám đốc vào
+              tháng 12 năm 2013 và cấp phép hoạt động vào tháng 11 năm 2014,
+              Trung tâm đã xây dựng, triển khai chiến lược phát triển và các kế
+              hoạch trung hạn, hằng năm để thực hiện tốt sứ mạng của mình, góp
+              phần đáng kể vào phát triển hệ thống KĐCLGD và xây dựng văn hóa
+              chất lượng trong các CSGD đại học và trường cao đẳng tại Việt Nam.
+            </p>
+            <p class="text-indent-2">
+              Sau 11 năm hoạt động, năm 2025 đã ghi nhận dấu mốc chuyển biến
+              quan trọng về thể chế và tổ chức của Trung tâm theo cơ chế tự chủ
+              toàn diện với sự công nhận Hội đồng quản lý bởi cơ quan có thẩm
+              quyền . Với mô hình quản trị hiện đại, chuyên nghiệp và minh bạch,
+              Trung tâm tiếp tục khẳng định vai trò trong hệ thống giáo dục đại
+              học và đang hiện thực hóa tầm nhìn trở thành tổ chức kiểm định
+              hàng đầu tại Việt Nam, có uy tín trong khu vực và quốc tế.
+            </p>
+            <img src="./assets/image/single-blog.jpg" width="100%" />
+            <p>Một số danh hiệu đã được ghi nhận, khen thưởng</p>
+            <p class="text-indent-2">
+              Trung tâm đạt các danh hiệu như: Tập thể lao động xuất sắc trong
+              nhiều năm; Cờ thi đua của ĐHQGHN trong các năm 2022, 2023; Bằng
+              khen của Giám đốc ĐHQGHN các năm 2019, 2023; Bằng khen của Bộ
+              trưởng Bộ GDĐT về thành tích xuất sắc trong quá trình 15 năm xây
+              dựng và phát triển hệ thống bảo đảm và KĐCLGD; Bằng khen Bộ trưởng
+              Bộ GDĐT về thành tích xuất sắc trong xây dựng và phát triển Trung
+              tâm vào năm 2023. Công đoàn Trung tâm được đánh giá là Công đoàn
+              cơ sở vững mạnh, được nhận Bằng khen của Công đoàn Giáo dục Việt
+              Nam năm 2023.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="single-blog__content--right">
-        <h2>TIN LIÊN QUAN</h2>
-        <div class="widget-blog">
-          <h3 class="introduce-text">Tin tức về VNU-CEA</h3>
-          <div class="blog-item blog-item-horizontal">
-            <a href="./tin-tuc-chi-tiet.html" class="blog-image">
-              <img src="./assets/image/blog1.jpg" />
-              <div class="categories">
-                <span class="new">Mới</span>
-              </div>
-            </a>
-            <div class="content">
-              <div class="post-text">
-                <div class="categories">
-                  <span>Đào tạo</span>
+        <div class="single-blog__content--right">
+          <h2>TIN LIÊN QUAN</h2>
+          <h3 class="introduce-text mb-32">Tin tức về VNU-CEA</h3>
+          <div class="widget-blog mb-32">
+            <div class="widget-blog-scroll">
+              <div class="blog-item blog-item-horizontal">
+                <a href="./tin-tuc-chi-tiet.html" class="blog-image">
+                  <img src="./assets/image/blog1.jpg" />
+                  <div class="categories">
+                    <span class="new">Mới</span>
+                  </div>
+                </a>
+                <div class="content">
+                  <div class="post-text">
+                    <div class="categories">
+                      <span>Đào tạo</span>
+                    </div>
+                    <div class="time">08:00 19/04/2025</div>
+                  </div>
+                  <a href="./tin-tuc-chi-tiet.html">
+                    Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá 48
+                  </a>
                 </div>
-                <div class="time">08:00 19/04/2025</div>
               </div>
-              <a href="./tin-tuc-chi-tiet.html">
-                Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
-                48
-              </a>
+              <div class="blog-item blog-item-horizontal">
+                <a href="./tin-tuc-chi-tiet.html" class="blog-image">
+                  <img src="./assets/image/blog2.jpg" />
+                </a>
+                <div class="content">
+                  <div class="post-text">
+                    <div class="categories">
+                      <span>Tập huấn</span>
+                    </div>
+                    <div class="time">08:00 19/04/2025</div>
+                  </div>
+                  <a href="./tin-tuc-chi-tiet.html">
+                    Thông báo tổ chức tập huấn nghiệp vụ kiểm định viên toàn
+                    Việt Nam
+                  </a>
+                </div>
+              </div>
+              <div class="blog-item blog-item-horizontal">
+                <a href="./tin-tuc-chi-tiet.html" class="blog-image">
+                  <img src="./assets/image/blog2.jpg" />
+                </a>
+                <div class="content">
+                  <div class="post-text">
+                    <div class="categories">
+                      <span>Tập huấn</span>
+                    </div>
+                    <div class="time">08:00 19/04/2025</div>
+                  </div>
+                  <a href="./tin-tuc-chi-tiet.html">
+                    Thông báo tổ chức tập huấn nghiệp vụ kiểm định viên toàn
+                    Việt Nam
+                  </a>
+                </div>
+              </div>
+              <div class="blog-item blog-item-horizontal">
+                <a href="./tin-tuc-chi-tiet.html" class="blog-image">
+                  <img src="./assets/image/blog3.jpg" />
+                </a>
+                <div class="content">
+                  <div class="post-text">
+                    <div class="categories">
+                      <span>Kết quả</span>
+                    </div>
+                    <div class="time">08:00 19/04/2025</div>
+                  </div>
+                  <a href="./tin-tuc-chi-tiet.html">
+                    Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá 48
+                  </a>
+                </div>
+              </div>
+              <div class="blog-item blog-item-horizontal">
+                <a href="./tin-tuc-chi-tiet.html" class="blog-image">
+                  <img src="./assets/image/blog3.jpg" />
+                </a>
+                <div class="content">
+                  <div class="post-text">
+                    <div class="categories">
+                      <span>Kết quả</span>
+                    </div>
+                    <div class="time">08:00 19/04/2025</div>
+                  </div>
+                  <a href="./tin-tuc-chi-tiet.html">
+                    Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá 48
+                  </a>
+                </div>
+              </div>
+              <div class="blog-item blog-item-horizontal">
+                <a href="./tin-tuc-chi-tiet.html" class="blog-image">
+                  <img src="./assets/image/blog3.jpg" />
+                </a>
+                <div class="content">
+                  <div class="post-text">
+                    <div class="categories">
+                      <span>Kết quả</span>
+                    </div>
+                    <div class="time">08:00 19/04/2025</div>
+                  </div>
+                  <a href="./tin-tuc-chi-tiet.html">
+                    Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá 48
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="blog-item blog-item-horizontal">
-            <a href="./tin-tuc-chi-tiet.html" class="blog-image">
-              <img src="./assets/image/blog2.jpg" />
-            </a>
-            <div class="content">
-              <div class="post-text">
-                <div class="categories">
-                  <span>Tập huấn</span>
-                </div>
-                <div class="time">08:00 19/04/2025</div>
-              </div>
-              <a href="./tin-tuc-chi-tiet.html">
-                Thông báo tổ chức tập huấn nghiệp vụ kiểm định viên toàn
-                Việt Nam
-              </a>
-            </div>
-          </div>
-          <div class="blog-item blog-item-horizontal">
-            <a href="./tin-tuc-chi-tiet.html" class="blog-image">
-              <img src="./assets/image/blog3.jpg" />
-            </a>
-            <div class="content">
-              <div class="post-text">
-                <div class="categories">
-                  <span>Kết quả</span>
-                </div>
-                <div class="time">08:00 19/04/2025</div>
-              </div>
-              <a href="./tin-tuc-chi-tiet.html">
-                Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
-                48
-              </a>
-            </div>
-          </div>
-          <div class="blog-item blog-item-horizontal">
-            <a href="./tin-tuc-chi-tiet.html" class="blog-image">
-              <img src="./assets/image/blog3.jpg" />
-            </a>
-            <div class="content">
-              <div class="post-text">
-                <div class="categories">
-                  <span>Kết quả</span>
-                </div>
-                <div class="time">08:00 19/04/2025</div>
-              </div>
-              <a href="./tin-tuc-chi-tiet.html">
-                Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
-                48
-              </a>
-            </div>
-          </div>
-          <div class="blog-item blog-item-horizontal">
-            <a href="./tin-tuc-chi-tiet.html" class="blog-image">
-              <img src="./assets/image/blog3.jpg" />
-            </a>
-            <div class="content">
-              <div class="post-text">
-                <div class="categories">
-                  <span>Kết quả</span>
-                </div>
-                <div class="time">08:00 19/04/2025</div>
-              </div>
-              <a href="./tin-tuc-chi-tiet.html">
-                Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
-                48
-              </a>
-            </div>
-          </div>
-          <a href="./tin-tuc.html" class="btn btn-outline-success">
+          <a href="./tin-tuc.html" class="btn btn-outline-success d-block">
             Xem tất cả <i class="bi bi-chevron-right"></i>
           </a>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <img src="./assets/image/logo-footer.png" width="100%" />
-        <p>
-          Tòa nhà HT2, Khu đô thị Đại học Quốc gia Hà Nội, xã Hòa Lạc, thành
-          phố Hà Nội
-        </p>
-        <div class="d-flex gap-3 group-social">
-          <a href="#"><img src="./assets/icon/Facebook.svg" /></a>
-          <a href="#">
-            <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
-              <rect width="17.5" height="17.5" transform="translate(5.25 5.64032)" fill="currentColor" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M7.21875 7.60907H12.5869L14.2291 11.9403L12.4589 13.0191C13.064 14.1584 14.1595 15.3363 15.3246 15.9453L16.3997 14.1533L20.7812 15.8024V21.1716H20.1979C16.3815 21.1716 13.1282 19.8635 10.8275 17.5628C8.52685 15.2621 7.21875 12.0088 7.21875 8.1924V7.60907ZM8.39649 8.77574C8.52205 12.0595 9.70918 14.7946 11.6525 16.7379C13.5958 18.6811 16.3308 19.8683 19.6146 19.9938V16.6098L16.8995 15.588L15.8046 17.4128L15.3464 17.2352C13.5206 16.5276 11.8575 14.6667 11.1686 13.0194L10.9752 12.5571L12.7948 11.4482L11.7815 8.77574H8.39649Z"
-                fill="white" />
-            </svg>
-          </a>
-          <a href="#"><svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
-              <rect width="17.5" height="17.5" transform="translate(5.25 5.64032)" fill="currentColor" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M21.1471 8.70276H6.85547V20.0778H21.1471V8.70276ZM8.02214 10.4788V18.9111H19.9805V10.4787L14.0013 15.1292L8.02214 10.4788ZM18.8636 9.86943H9.139L14.0013 13.6512L18.8636 9.86943Z"
-                fill="white" />
-            </svg>
-          </a>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <img src="./assets/image/logo-footer.png" width="100%" />
+          <p>
+            Tòa nhà HT2, Khu đô thị Đại học Quốc gia Hà Nội, xã Hòa Lạc, thành
+            phố Hà Nội
+          </p>
+          <div class="d-flex gap-3 group-social">
+            <a href="#"><img src="./assets/icon/Facebook.svg" /></a>
+            <a href="#">
+              <svg
+                width="28"
+                height="29"
+                viewBox="0 0 28 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
+                <rect
+                  width="17.5"
+                  height="17.5"
+                  transform="translate(5.25 5.64032)"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.21875 7.60907H12.5869L14.2291 11.9403L12.4589 13.0191C13.064 14.1584 14.1595 15.3363 15.3246 15.9453L16.3997 14.1533L20.7812 15.8024V21.1716H20.1979C16.3815 21.1716 13.1282 19.8635 10.8275 17.5628C8.52685 15.2621 7.21875 12.0088 7.21875 8.1924V7.60907ZM8.39649 8.77574C8.52205 12.0595 9.70918 14.7946 11.6525 16.7379C13.5958 18.6811 16.3308 19.8683 19.6146 19.9938V16.6098L16.8995 15.588L15.8046 17.4128L15.3464 17.2352C13.5206 16.5276 11.8575 14.6667 11.1686 13.0194L10.9752 12.5571L12.7948 11.4482L11.7815 8.77574H8.39649Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="#"
+              ><svg
+                width="28"
+                height="29"
+                viewBox="0 0 28 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="14" cy="14.3903" r="14" fill="currentColor" />
+                <rect
+                  width="17.5"
+                  height="17.5"
+                  transform="translate(5.25 5.64032)"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.1471 8.70276H6.85547V20.0778H21.1471V8.70276ZM8.02214 10.4788V18.9111H19.9805V10.4787L14.0013 15.1292L8.02214 10.4788ZM18.8636 9.86943H9.139L14.0013 13.6512L18.8636 9.86943Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>© 2025 CEA - VNU Hanoi. All rights reserved.</p>
+          <div class="d-flex gap-4">
+            <a href="#">Privay Policy</a>
+            <a href="#">Term of Service</a>
+          </div>
         </div>
       </div>
-      <div class="footer__bottom">
-        <p>© 2025 CEA - VNU Hanoi. All rights reserved.</p>
-        <div class="d-flex gap-4">
-          <a href="#">Privay Policy</a>
-          <a href="#">Term of Service</a>
-        </div>
-      </div>
+      <script src="./assets/css/main.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="./assets/css/ticker-single.js"></script>
     </div>
-    <script src="./assets/css/main.js"></script>
-  </div>
-</body>
-
+  </body>
 </html>

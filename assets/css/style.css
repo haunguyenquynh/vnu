@@ -337,39 +337,39 @@
       line-height: 160%;
       text-transform: uppercase;
       margin: 0; }
-    .main-content .section-1__right .list-group {
-      gap: 20px; }
-      .main-content .section-1__right .list-group .list-group-item {
-        background: #f5fbf9;
-        border: 0;
-        border-radius: 16px;
-        padding: 24px 16px 24px 24px;
-        overflow: hidden; }
-        .main-content .section-1__right .list-group .list-group-item:nth-child(2n) {
-          background: #f9f7ff; }
-        .main-content .section-1__right .list-group .list-group-item .tag {
-          opacity: 1;
-          padding-right: 10px;
-          padding-left: 10px;
-          border-bottom-left-radius: 8px;
-          background: #ff0000;
-          position: absolute;
-          top: 0;
-          right: 0;
+    .main-content .section-1__right .list-group .list-group-item {
+      background: #f5fbf9;
+      border: 0;
+      border-radius: 16px;
+      padding: 20px 16px 18px 24px;
+      overflow: hidden;
+      margin-bottom: 20px; }
+      .main-content .section-1__right .list-group .list-group-item:nth-child(2n) {
+        background: #f9f7ff; }
+      .main-content .section-1__right .list-group .list-group-item .tag {
+        opacity: 1;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-bottom-left-radius: 8px;
+        background: #ff0000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 19.82px;
+        color: #fff;
+        text-align: justify;
+        padding-top: 2px; }
+      .main-content .section-1__right .list-group .list-group-item .content {
+        line-height: 19.82px;
+        color: #6e6e6e;
+        min-height: 65px; }
+        .main-content .section-1__right .list-group .list-group-item .content .fw-600 {
           font-weight: 600;
-          font-size: 11px;
-          line-height: 19.82px;
-          color: #fff;
-          text-align: justify;
-          padding-top: 2px; }
-        .main-content .section-1__right .list-group .list-group-item .content {
-          line-height: 19.82px;
-          color: #6e6e6e; }
-          .main-content .section-1__right .list-group .list-group-item .content .fw-600 {
-            font-weight: 600;
-            font-size: 17px;
-            color: #000;
-            margin-bottom: 8px; }
+          font-size: 17px;
+          color: #000;
+          margin-bottom: 8px; }
 
 .section-2 {
   margin-top: -136px;
@@ -745,7 +745,8 @@
   align-items: center;
   gap: 8px;
   margin: 48px 0; }
-  .pagination .page-numbers.dots, .pagination .page-dots {
+  .pagination .page-numbers.dots,
+  .pagination .page-dots {
     height: 2px;
     width: 68px;
     display: block;
@@ -798,7 +799,9 @@
       .finding-page .section-2 .form {
         flex-flow: column;
         gap: 8px; } }
-.finding-page .blog-page, .finding-page .table-responsive, .finding-page .m-w-1130 {
+.finding-page .blog-page,
+.finding-page .table-responsive,
+.finding-page .m-w-1130 {
   max-width: 1130px;
   margin: 0 auto; }
 
@@ -848,6 +851,11 @@
   .single-blog__content--right {
     flex: 1;
     max-width: 373px; }
+  .single-blog__content .widget-blog {
+    height: 661px;
+    overflow: hidden; }
+    .single-blog__content .widget-blog .widget-blog-scroll .blog-item.blog-item-horizontal {
+      margin-bottom: 32px; }
   .single-blog__content .widget-blog {
     display: flex;
     flex-flow: column;
@@ -1251,9 +1259,7 @@
 
 .scroll-posts {
   overflow: hidden;
-  height: 367px; }
-  .scroll-posts .list-group {
-    animation: scrollVertical 32s linear infinite; }
+  height: 358px; }
 
 .scroll-blog {
   animation: scrollVertical 32s linear infinite; }
@@ -1262,7 +1268,7 @@
   0% {
     transform: translateY(0); }
   100% {
-    transform: translateY(-100%); } }
+    transform: translateY(-50%); } }
 .swiper-slide img:hover,
 .blog-image img:hover {
   opacity: 1;
@@ -1284,5 +1290,8 @@
     filter: brightness(0) invert(1);
     width: 20px;
     height: 20px; }
+
+.mb-32 {
+  margin-bottom: 32px !important; }
 
 /*# sourceMappingURL=style.css.map */

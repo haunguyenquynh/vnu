@@ -94,21 +94,20 @@ new Swiper(".logo-slider", {
 const tabBtns = document.querySelectorAll(".tab-btn");
 const tabContents = document.querySelectorAll(".tab-content-hr");
 
-tabBtns.forEach(btn => {
+tabBtns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     e.preventDefault(); // chặn nhảy trang
 
     // toggle active button
-    tabBtns.forEach(b => b.classList.remove("active"));
+    tabBtns.forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
 
     // toggle active content
     const targetId = btn.getAttribute("href").substring(1); // bỏ dấu #
-    tabContents.forEach(c => c.classList.remove("active"));
+    tabContents.forEach((c) => c.classList.remove("active"));
     document.getElementById(targetId).classList.add("active");
   });
 });
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
@@ -127,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Nếu có ít nhất 1 trong 2 tham số
   if (q || r) {
-    setText("searchKeyword", q || r);  // ưu tiên q
+    setText("searchKeyword", q || r); // ưu tiên q
     setText("searchKeyword2", r || q); // ưu tiên r
 
     // Gán vào input (nếu có)
@@ -138,4 +137,3 @@ document.addEventListener("DOMContentLoaded", () => {
     setText("searchKeyword2", "Không có từ khóa");
   }
 });
-

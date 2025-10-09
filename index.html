@@ -114,11 +114,13 @@
               <i class="bi bi-list"></i>
             </button>
           </div>
-          <form class="d-flex flex-row-reverse form-search" action="tim-kiem.html" method="GET" id="searchForm">
-            <button
-              class="btn btn-search-icon"
-              type="submit"
-            >
+          <form
+            class="d-flex flex-row-reverse form-search"
+            action="tim-kiem.html"
+            method="GET"
+            id="searchForm"
+          >
+            <button class="btn btn-search-icon" type="submit">
               <img src="./assets/icon/search.png" />
             </button>
             <input
@@ -274,13 +276,13 @@
         <div class="section-1__right">
           <h2 class="title">thông báo mới</h2>
           <div class="scroll-posts">
-            <ul class="list-group">
+            <ul class="list-group" id="ticker">
               <li class="list-group-item d-flex align-items-start gap-3">
                 <img src="./assets/icon/notification.svg" />
                 <div class="content">
                   <div class="fw-600">Tập huấn ĐBCL</div>
-                  Đảm bảo chất lượng cho các trường đại học trên địa bàn Thành phố
-                  Hà Nội
+                  Đảm bảo chất lượng cho các trường đại học trên địa bàn Thành
+                  phố Hà Nội
                 </div>
                 <span class="tag">Mới</span>
               </li>
@@ -295,32 +297,15 @@
                 <img src="./assets/icon/notification.svg" />
                 <div class="content">
                   <div class="fw-600">Tập huấn ĐBCL</div>
-                  Đảm bảo chất lượng cho các trường đại học trên địa bàn Thành phố
-                  Hà Nội
+                  Đảm bảo chất lượng cho các trường đại học trên địa bàn Thành
+                  phố Hà Nội
                 </div>
               </li>
               <li class="list-group-item d-flex align-items-start gap-3">
-                <img src="./assets/icon/notification.svg" />
+                <img src="./assets/icon/calendar.svg" />
                 <div class="content">
-                  <div class="fw-600">Tập huấn ĐBCL</div>
-                  Đảm bảo chất lượng cho các trường đại học trên địa bàn Thành phố
-                  Hà Nội
-                </div>
-              </li>
-              <li class="list-group-item d-flex align-items-start gap-3">
-                <img src="./assets/icon/notification.svg" />
-                <div class="content">
-                  <div class="fw-600">Tập huấn ĐBCL</div>
-                  Đảm bảo chất lượng cho các trường đại học trên địa bàn Thành phố
-                  Hà Nội
-                </div>
-              </li>
-              <li class="list-group-item d-flex align-items-start gap-3">
-                <img src="./assets/icon/notification.svg" />
-                <div class="content">
-                  <div class="fw-600">Tập huấn ĐBCL</div>
-                  Đảm bảo chất lượng cho các trường đại học trên địa bàn Thành phố
-                  Hà Nội
+                  <div class="fw-600">Hội thảo khoa học</div>
+                  Đối sánh chất lượng giáo dục Đại Học tại Việt Nam
                 </div>
               </li>
             </ul>
@@ -376,7 +361,12 @@
               role="tabpanel"
               aria-labelledby="nav-education-tab"
             >
-              <form class="d-flex form" action="ket-qua.html" method="GET" id="searchForm2">
+              <form
+                class="d-flex form"
+                action="ket-qua.html"
+                method="GET"
+                id="searchForm2"
+              >
                 <div class="form-search">
                   <img src="./assets/icon/search.png" />
                   <input
@@ -397,7 +387,12 @@
               role="tabpanel"
               aria-labelledby="nav-university-tab"
             >
-              <form class="d-flex form" action="ket-qua.html" method="GET" id="searchForm2">
+              <form
+                class="d-flex form"
+                action="ket-qua.html"
+                method="GET"
+                id="searchForm2"
+              >
                 <div class="form-search">
                   <img src="./assets/icon/search.png" />
                   <input
@@ -418,7 +413,12 @@
               role="tabpanel"
               aria-labelledby="nav-college-tab"
             >
-              <form class="d-flex form" action="ket-qua.html" method="GET" id="searchForm2">
+              <form
+                class="d-flex form"
+                action="ket-qua.html"
+                method="GET"
+                id="searchForm2"
+              >
                 <div class="form-search">
                   <img src="./assets/icon/search.png" />
                   <input
@@ -727,6 +727,8 @@
         </div>
       </div>
       <script src="./assets/css/main.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="./assets/css/ticker-single.js"></script>
     </div>
   </body>
 </html>
