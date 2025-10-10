@@ -25,17 +25,14 @@
     <link href="./assets/css/common.css" rel="stylesheet" />
     <link href="./assets/css/style.css" rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 
-    <title>Tin tức hợp tác</title>
+    <title>Quy trình KĐCLGD</title>
   </head>
 
   <body>
@@ -114,23 +111,12 @@
               <i class="bi bi-list"></i>
             </button>
           </div>
-          <form
-            class="d-flex flex-row-reverse form-search"
-            action="tim-kiem.html"
-            method="GET"
-            id="searchForm"
-          >
+          <form class="d-flex flex-row-reverse form-search" action="tim-kiem.html" method="GET" id="searchForm">
             <button class="btn btn-search-icon" type="submit">
               <img src="./assets/icon/search.png" />
             </button>
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Tìm kiếm tất cả"
-              aria-label="Search"
-              id="searchInput"
-              name="q"
-            />
+            <input class="form-control" type="search" placeholder="Tìm kiếm tất cả" aria-label="Search" id="searchInput"
+              name="q" />
           </form>
         </div>
       </div>
@@ -234,57 +220,68 @@
     <nav aria-label="breadcrumb" class="breadcrumb-content">
       <div class="container">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page">hợp tác</li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Quy trình KĐCLGD
+          </li>
         </ol>
       </div>
     </nav>
-    <div class="single-blog container cooperate-page">
+    <div class="single-blog procedure-page container">
       <div class="hr__content">
         <ul class="nav nav-pills nav-fill">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./doi-tac.html">
+            <a class="nav-link" aria-current="page" href="./quy-trinh.html">
               <div class="list-item">
-                <p>Đối tác</p>
-                <h3>Trong nước</h3>
-                <p class="time"><i class="bi bi-clock"></i> 20</p>
+                <p>Quy trình kiểm định</p>
+                <h3>Trường đại học</h3>
+                <p class="time">
+                  <i class="bi bi-clock"></i> 20/05/2025
+                </p>
               </div>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./doi-tac-quoc-te.html">
+            <a class="nav-link active" href="./kiem-dinh-truong-cao-dang-su-pham.html">
               <div class="list-item">
-                <p>Đối tác</p>
-                <h3>quốc tế</h3>
-                <p class="time"><i class="bi bi-clock"></i> 5</p>
+                <p>Quy trình kiểm định</p>
+                <h3>Trường cao đẳng sư phạm</h3>
+                <p class="time">
+                  <i class="bi bi-clock"></i> 20/05/2025
+                </p>
               </div>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="./tin-tuc-hop-tac.html">
+            <a class="nav-link" href="./kiem-dinh-chuong-trinh-dao-tao.html">
               <div class="list-item">
-                <p>Tin tức</p>
-                <h3>tin hợp tác quốc tế</h3>
-                <p class="time"><i class="bi bi-clock"></i> 20 tin bài</p>
+                <p>Quy trình kiểm định</p>
+                <h3>chương trình đào tạo</h3>
+                <p class="time">
+                  <i class="bi bi-clock"></i> 20/05/2025
+                </p>
               </div>
             </a>
           </li>
         </ul>
-        <nav style="--bs-breadcrumb-divider: '|'" aria-label="breadcrumb">
-          <ol class="breadcrumb-detail">
-            <li class="breadcrumb-item">
-              <a href="./tin-tuc-hop-tac.html">Tin hợp tác quốc tế</a>
+        <h2>trường cao đẳng sư phạm</h2>
+
+        <div class="content">
+          <ul class="nav nav-hr">
+            <li>
+              <a href="#procedure1" class="tab-btn active">Quy trình</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">
-              Tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá 48
+            <li><a href="#procedure2" class="tab-btn">Tiêu chuẩn</a></li>
+            <li><a href="#procedure3" class="tab-btn">Tự đánh giá</a></li>
+            <li>
+              <a href="#procedure4" class="tab-btn">Đánh giá ngoài ĐH</a>
             </li>
-          </ol>
-        </nav>
-        <div class="single-blog__content">
-          <div class="single-blog__content--left">
-            <h2>
-              Tọa đàm - Tập huấn “Đánh giá nguồn tài nguyên học liệu mở của thư
-              viện cơ sở giáo dục đại học: Vấn đề và giải pháp”
-            </h2>
+            <li>
+              <a href="#procedure5" class="tab-btn">Thẩm định công nhận</a>
+            </li>
+            <li><a href="#procedure6" class="tab-btn">Công cụ hỗ trợ</a></li>
+          </ul>
+
+          <div id="procedure1" class="tab-content-hr active">
             <div class="detail">
               <p>
                 Là một đại học hàng đầu của đất nước có kinh nghiệm và thế mạnh
@@ -293,168 +290,25 @@
                 tạo (Bộ GDĐT) giao xây dựng đề án thành lập trung tâm kiểm định
                 chất lượng giáo dục.
               </p>
-              <img src="./assets/image/new1.jpg" width="100%" />
+              <img src="./assets/image/procedure.png" width="100%" />
+            </div>
+          </div>
+          <div id="procedure2" class="tab-content-hr">
+            <div class="detail">
               <p>
-                lượng giáo dục - ĐHQGHN (Trung tâm) đánh dấu sự ra đời của một
-                trung tâm kiểm định chất lượng giáo dục đầu tiên tại Việt Nam.
-              </p>
-              <p class="text-indent-2">
-                Trung tâm là đơn vị sự nghiệp công lập có tư cách pháp nhân được
-                giao chức năng kiểm định chất lượng giáo dục (KĐCLGD) đối với
-                các CSGD ngoài ĐHQGHN, tư vấn đảm bảo và cải tiến chất lượng
-                đồng thời tổ chức đào tạo và bồi dưỡng nghiệp vụ về kiểm định
+                Là một đại học hàng đầu của đất nước có kinh nghiệm và thế mạnh
+                trong lĩnh vực bảo đảm và kiểm định chất lượng giáo dục, năm
+                2013 Đại học Quốc gia Hà Nội (ĐHQGHN) được Bộ Giáo dục và Đào
+                tạo (Bộ GDĐT) giao xây dựng đề án thành lập trung tâm kiểm định
                 chất lượng giáo dục.
               </p>
-              <p class="text-indent-2">
-                Kể từ khi Bộ trưởng Bộ GDĐT có quyết định bổ nhiệm Giám đốc vào
-                tháng 12 năm 2013 và cấp phép hoạt động vào tháng 11 năm 2014,
-                Trung tâm đã xây dựng, triển khai chiến lược phát triển và các
-                kế hoạch trung hạn, hằng năm để thực hiện tốt sứ mạng của mình,
-                góp phần đáng kể vào phát triển hệ thống KĐCLGD và xây dựng văn
-                hóa chất lượng trong các CSGD đại học và trường cao đẳng tại
-                Việt Nam.
-              </p>
-              <p class="text-indent-2">
-                Sau 11 năm hoạt động, năm 2025 đã ghi nhận dấu mốc chuyển biến
-                quan trọng về thể chế và tổ chức của Trung tâm theo cơ chế tự
-                chủ toàn diện với sự công nhận Hội đồng quản lý bởi cơ quan có
-                thẩm quyền . Với mô hình quản trị hiện đại, chuyên nghiệp và
-                minh bạch, Trung tâm tiếp tục khẳng định vai trò trong hệ thống
-                giáo dục đại học và đang hiện thực hóa tầm nhìn trở thành tổ
-                chức kiểm định hàng đầu tại Việt Nam, có uy tín trong khu vực và
-                quốc tế.
-              </p>
-              <img src="./assets/image/single-blog.jpg" width="100%" />
-              <p>Một số danh hiệu đã được ghi nhận, khen thưởng</p>
-              <p class="text-indent-2">
-                Trung tâm đạt các danh hiệu như: Tập thể lao động xuất sắc trong
-                nhiều năm; Cờ thi đua của ĐHQGHN trong các năm 2022, 2023; Bằng
-                khen của Giám đốc ĐHQGHN các năm 2019, 2023; Bằng khen của Bộ
-                trưởng Bộ GDĐT về thành tích xuất sắc trong quá trình 15 năm xây
-                dựng và phát triển hệ thống bảo đảm và KĐCLGD; Bằng khen Bộ
-                trưởng Bộ GDĐT về thành tích xuất sắc trong xây dựng và phát
-                triển Trung tâm vào năm 2023. Công đoàn Trung tâm được đánh giá
-                là Công đoàn cơ sở vững mạnh, được nhận Bằng khen của Công đoàn
-                Giáo dục Việt Nam năm 2023.
-              </p>
+              <img src="./assets/image/tieu-chuan.jpg" width="100%" />
             </div>
           </div>
-          <div class="single-blog__content--right">
-            <h2>TIN LIÊN QUAN</h2>
-            <h3 class="introduce-text mb-32">Tin tức về VNU-CEA</h3>
-            <div class="widget-blog mb-32">
-              <div class="widget-blog-scroll">
-                <div class="blog-item blog-item-horizontal">
-                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
-                    <img src="./assets/image/blog1.jpg" />
-                    <div class="categories">
-                      <span class="new">Mới</span>
-                    </div>
-                  </a>
-                  <div class="content">
-                    <div class="post-text">
-                      <div class="categories">
-                        <span>Đào tạo</span>
-                      </div>
-                      <div class="time">08:00 19/04/2025</div>
-                    </div>
-                    <a href="./tin-tuc-chi-tiet.html">
-                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
-                      48
-                    </a>
-                  </div>
-                </div>
-                <div class="blog-item blog-item-horizontal">
-                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
-                    <img src="./assets/image/blog2.jpg" />
-                  </a>
-                  <div class="content">
-                    <div class="post-text">
-                      <div class="categories">
-                        <span>Tập huấn</span>
-                      </div>
-                      <div class="time">08:00 19/04/2025</div>
-                    </div>
-                    <a href="./tin-tuc-chi-tiet.html">
-                      Thông báo tổ chức tập huấn nghiệp vụ kiểm định viên toàn
-                      Việt Nam
-                    </a>
-                  </div>
-                </div>
-                <div class="blog-item blog-item-horizontal">
-                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
-                    <img src="./assets/image/blog3.jpg" />
-                  </a>
-                  <div class="content">
-                    <div class="post-text">
-                      <div class="categories">
-                        <span>Kết quả</span>
-                      </div>
-                      <div class="time">08:00 19/04/2025</div>
-                    </div>
-                    <a href="./tin-tuc-chi-tiet.html">
-                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
-                      48
-                    </a>
-                  </div>
-                </div>
-                <div class="blog-item blog-item-horizontal">
-                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
-                    <img src="./assets/image/blog3.jpg" />
-                  </a>
-                  <div class="content">
-                    <div class="post-text">
-                      <div class="categories">
-                        <span>Kết quả</span>
-                      </div>
-                      <div class="time">08:00 19/04/2025</div>
-                    </div>
-                    <a href="./tin-tuc-chi-tiet.html">
-                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
-                      48
-                    </a>
-                  </div>
-                </div>
-                <div class="blog-item blog-item-horizontal">
-                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
-                    <img src="./assets/image/blog3.jpg" />
-                  </a>
-                  <div class="content">
-                    <div class="post-text">
-                      <div class="categories">
-                        <span>Kết quả</span>
-                      </div>
-                      <div class="time">08:00 19/04/2025</div>
-                    </div>
-                    <a href="./tin-tuc-chi-tiet.html">
-                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
-                      48
-                    </a>
-                  </div>
-                </div>
-                <div class="blog-item blog-item-horizontal">
-                  <a href="./tin-tuc-chi-tiet.html" class="blog-image">
-                    <img src="./assets/image/blog3.jpg" />
-                  </a>
-                  <div class="content">
-                    <div class="post-text">
-                      <div class="categories">
-                        <span>Kết quả</span>
-                      </div>
-                      <div class="time">08:00 19/04/2025</div>
-                    </div>
-                    <a href="./tin-tuc-chi-tiet.html">
-                      Thông báo tổ chức bồi dưỡng nghiệp vụ kiểm định viên Khoá
-                      48
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a href="./tin-tuc.html" class="btn btn-outline-success d-block">
-              Xem tất cả <i class="bi bi-chevron-right"></i>
-            </a>
-          </div>
+          <div id="procedure3" class="tab-content-hr">Tự đánh giá</div>
+          <div id="procedure4" class="tab-content-hr">Đánh giá ngoài ĐH</div>
+          <div id="procedure5" class="tab-content-hr">Thẩm định công nhận</div>
+          <div id="procedure6" class="tab-content-hr">Công cụ hỗ trợ</div>
         </div>
       </div>
     </div>
@@ -525,8 +379,6 @@
         </div>
       </div>
       <script src="./assets/css/main.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="./assets/css/ticker-single.js"></script>
     </div>
   </body>
 </html>
